@@ -1,0 +1,54 @@
+// variable use
+@use '../abstracts/variables';
+
+
+// Carousel container
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+// Individual carousel slides
+.carousel-slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+
+    &.active {
+        display: block;
+        opacity: 1;
+    }
+}
+
+// Navigation buttons
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &.prev {
+        left: 10px;
+    }
+
+    &.next {
+        right: 10px;
+    }
+}
+
+
+$small: 300px;
+$medium: 900px;
+
+
+
+//some CSS
+@media screen and (max-width: $small) {
+    //do Smth
+}
+
+@media screen and (min-width: $medium) {
+    //do Smth
+}

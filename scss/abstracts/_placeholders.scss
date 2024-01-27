@@ -1,0 +1,22 @@
+// _placeholders.scss
+
+// Placeholder for a common text style
+%common-text-style {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+// Placeholder for a clearfix
+%clearfix {
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}

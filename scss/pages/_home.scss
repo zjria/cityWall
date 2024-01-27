@@ -1,0 +1,44 @@
+.banner {
+    .overlay {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .container.carousel-caption {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+
+        p {
+            font-size: 22px;
+            position: relative;
+            margin-bottom: 30px;
+
+            &::after {
+                content: '';
+                width: 290px;
+                height: 1px;
+                background-color: $whiteColor;
+                position: absolute;
+                top: 90%;
+                left: 0;
+            }
+        }
+
+        h1 {
+            font-size: 62px;
+            line-height: 82px;
+            margin-bottom: 50px;
+        }
+    }
+
+
+}

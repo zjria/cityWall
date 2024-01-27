@@ -1,0 +1,17 @@
+$admin-background-color: #f5f5f5;
+$admin-text-color: #333;
+
+@mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+}
+
+.admin-container {
+    background-color: $admin-background-color;
+    color: $admin-text-color;
+    // other admin container styles
+}
+
+.admin-sidebar {
+    width: 250px;
+    // other sidebar styles
+}

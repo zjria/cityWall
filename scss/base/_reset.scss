@@ -1,0 +1,34 @@
+// Reset box model and remove margin and padding
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $primary-font;
+    font-size: 16px;
+}
+
+// Remove list styling
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+// Remove default anchor styles
+a {
+    text-decoration: none;
+}
+
+// Reset heading margins
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}

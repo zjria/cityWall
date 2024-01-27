@@ -1,0 +1,31 @@
+// Font sizes
+$base-font-size: 16px;
+$heading-1-size: 2em;
+$heading-2-size: 1.5em;
+$heading-3-size: 1.2em;
+
+// Line heights
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Typography styles
+
+h1 {
+    font-size: $heading-1-size;
+    line-height: $heading-line-height;
+    color: #444;
+}
+
+h2 {
+    font-size: $heading-2-size;
+    line-height: $heading-line-height;
+    color: #555;
+}
+
+h3 {
+    font-size: $heading-3-size;
+    line-height: $heading-line-height;
+    color: #666;
+}
+
+// Additional typography styles can be added as needed
