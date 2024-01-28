@@ -2,6 +2,7 @@ header {
     position: relative;
 
     .top-header {
+        font-family: $jost-font;
         display: flex;
         margin: auto;
         justify-content: center;
@@ -9,7 +10,7 @@ header {
         .top-header-content {
             background-color: $blackColor;
             color: $whiteColor;
-            padding: 20px 0px;
+            padding: 18px 0px;
             width: 100%;
 
             .container {
@@ -54,6 +55,8 @@ header {
     }
 
     .navbar-details {
+        font-family: $roboto-font;
+        font-weight: bold;
         padding: 9.8px 0px;
 
         .container {
@@ -67,11 +70,11 @@ header {
                 left: 0;
                 z-index: 1;
                 clear: both;
-                top: -64px;
+                top: -76px;
 
                 a {
                     display: flex;
-                    padding: 50px 0px;
+                    padding: 56.5px 0px;
                     float: right;
                     padding-right: 100px;
 

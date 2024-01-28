@@ -3,57 +3,130 @@ $whiteColor: #fff;
 $blackColor: #000;
 $redColor: #e41e2f;
 $secondaryColor: #b59a6d;
+$davysGrayColor: #505050;
 
 
 
-
-// Fonts
-$primary-font: 'Myriad Pro Regular';
 
 // Google fonts
-// font-family: "Helvetica W01 Light";
+$raleway-font: "Raleway", sans-serif;
+$manrope-font: "Manrope", sans-serif;
+$josefin-font: "Josefin Sans", sans-serif;
+$roboto-font: "Roboto", sans-serif;
+$jost-font: "Jost", sans-serif;
 
-// .inknut-antiqua-light {
-//     font-family: "Inknut Antiqua", serif;
-//     font-weight: 300;
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+// .jost-<uniquifier> {
+//     font-family: "Jost", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
 //     font-style: normal;
 // }
 
-// .inknut-antiqua-regular {
-//     font-family: "Inknut Antiqua", serif;
-//     font-weight: 400;
+
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+// .raleway-<uniquifier> {
+//     font-family: "Raleway", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
 //     font-style: normal;
 // }
 
-// .inknut-antiqua-medium {
-//     font-family: "Inknut Antiqua", serif;
-//     font-weight: 500;
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 200 to 800
+
+// .manrope-<uniquifier> {
+//     font-family: "Manrope", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
 //     font-style: normal;
 // }
 
-// .inknut-antiqua-semibold {
-//     font-family: "Inknut Antiqua", serif;
-//     font-weight: 600;
-//     font-style: normal;
-// }
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 700
 
-// .inknut-antiqua-bold {
-//     font-family: "Inknut Antiqua", serif;
-//     font-weight: 700;
+// .josefin-sans-<uniquifier> {
+//     font-family: "Josefin Sans", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
 //     font-style: normal;
-// }
+//   }
 
-// .inknut-antiqua-extrabold {
-//     font-family: "Inknut Antiqua", serif;
-//     font-weight: 800;
-//     font-style: normal;
-// }
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
 
-// .inknut-antiqua-black {
-//     font-family: "Inknut Antiqua", serif;
-//     font-weight: 900;
-//     font-style: normal;
-// }
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
 
 
 // // Spacing
