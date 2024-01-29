@@ -29,7 +29,6 @@
                 font-size: 22px;
                 position: relative;
                 margin-bottom: 30px;
-                font-weight: 400;
 
                 &::after {
                     content: '';
@@ -59,6 +58,8 @@
         .card {
             padding: 40px 10px 40px 40px;
             border-radius: 0;
+            border: none;
+            box-shadow: 0px 0px 11px 0px rgb(0 0 0 / 18%);
 
             img {
                 background-color: $secondaryColor;
@@ -87,11 +88,73 @@
 
 
 // ==============Responsive classes==============
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .banner .container .carousel-caption p {
+        font-size: 16px;
+    }
 
-@media (min-width: 577px) and (max-width: 768px) {}
+    .banner .container .carousel-caption p::after {
+        width: 235px;
+    }
 
-@media (min-width: 768px) and (max-width: 992px) {}
+    .banner .container .carousel-caption h1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        line-height: 35px;
+    }
+
+    .banner .carousel-img img {
+        height: 400px;
+    }
+
+    .banner .container .carousel-caption {
+        top: 45px;
+    }
+
+    .banner .banner-card .card .card-body .card-title {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .banner .container .carousel-caption {
+        top: 50px;
+    }
+
+    .banner .container .carousel-caption h1 {
+        font-size: 30px;
+        margin-bottom: 35px;
+        margin-top: -15px;
+        font-weight: 600;
+        line-height: 45px;
+    }
+
+    .banner .carousel-img img {
+        height: 500px;
+    }
+
+    .banner .banner-card .card img {
+        width: 20%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .banner .container .carousel-caption {
+        top: 90px;
+    }
+
+    .banner .container .carousel-caption h1 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 65px;
+    }
+
+    .banner .carousel-img img {
+        height: 600px;
+    }
+}
 
 @media (min-width: 993px) and (min-width: 1200px) {}
 
