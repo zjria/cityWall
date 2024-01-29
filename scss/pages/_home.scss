@@ -81,11 +81,35 @@
                 }
             }
         }
+
+        form {
+            border: 1px dashed $secondaryColor;
+            padding: 5px 5px 5px 10px;
+            width: 70%;
+
+            input#solution {
+                width: 80%;
+                border: none;
+                outline: none;
+                padding-right: 10px;
+            }
+
+            input#solution::placeholder {
+                white-space: nowrap;
+            }
+
+            input#submit {
+                width: 20%;
+                border: none;
+                outline: none;
+                background-color: $secondaryColor;
+                color: $whiteColor;
+                padding: 5px;
+
+            }
+        }
     }
 }
-
-
-
 
 // ==============Responsive classes==============
 @media (max-width: 576px) {
@@ -116,6 +140,30 @@
         font-weight: 500;
         font-size: 18px;
     }
+
+    .banner .banner-card form {
+        width: 100%;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .banner .banner-card form input#submit {
+        width: 50%;
+    }
+
+    .banner .banner-card form input#solution {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding-right: 5px;
+        line-height: 4;
+    }
+
+    .banner .banner-card form input#solution::placeholder {
+        white-space: normal;
+        line-height: 10;
+    }
+
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -138,6 +186,28 @@
     .banner .banner-card .card img {
         width: 20%;
     }
+
+    .banner .banner-card form {
+        width: 100%;
+    }
+
+    .banner .banner-card form input#solution {
+        width: 100%;
+        padding-right: 5px;
+        line-height: 4;
+        margin-top: -5px;
+        background: transparent;
+    }
+
+    .banner .banner-card form input#solution::placeholder {
+        white-space: normal;
+        line-height: 10;
+    }
+
+    .banner .banner-card form input#submit {
+        width: 35%;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -153,6 +223,14 @@
 
     .banner .carousel-img img {
         height: 600px;
+    }
+
+    .banner .banner-card form {
+        width: 100%;
+    }
+
+    .banner .banner-card form input#submit {
+        width: 25%;
     }
 }
 
