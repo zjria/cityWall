@@ -1,3 +1,13 @@
+// 100 – Thin.
+// 200 – Extra Light (Ultra Light)
+// 300 – Light.
+// 400 – Normal.
+// 500 – Medium.
+// 600 – Semi Bold (Demi Bold)
+// 700 – Bold.
+// 800 – Extra Bold (Ultra Bold)
+
+
 // Reset box model and remove margin and padding
 * {
     box-sizing: border-box;
@@ -16,7 +26,6 @@ section {
     margin: 100px 0px;
 }
 
-// Remove list styling
 ul,
 ol {
     list-style: none;
@@ -24,12 +33,10 @@ ol {
     padding: 0;
 }
 
-// Remove default anchor styles
 a {
     text-decoration: none;
 }
 
-// Reset heading margins
 h1,
 h2,
 h3,
@@ -37,4 +44,46 @@ h4,
 h5,
 h6 {
     margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: $raisinBlackColor;
+    font-family: $raleway-font;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 800;
+}
+
+h6 {
+    color: $secondaryColor;
+    font-family: $raleway-font;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    color: $davysGrayColor;
+}
+
+.small-circle::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px dashed #b59a6d;
+    left: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+}
+
+.small-circle::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px dashed #b59a6d;
+    left: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
 }

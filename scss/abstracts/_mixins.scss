@@ -16,6 +16,15 @@
     top: 76px;
 }
 
+@mixin square-style {
+    content: '';
+    background-color: $secondaryColor;
+    width: 10px;
+    height: 10px;
+    // left: 0;
+    position: absolute;
+}
+
 // add style করার নিয়ম
 // .about button {
 //     @include flex-container-row;
