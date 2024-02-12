@@ -3,14 +3,8 @@
     position: relative;
 
     .carousel-img {
-        .overlay {
+        .cover-images-overlay {
             position: absolute;
-            width: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5);
         }
 
         img {
@@ -165,36 +159,14 @@
             }
         }
 
+        button {
+            font-family: $raleway-font;
+        }
+
         .company-videos {
             column-gap: 60px;
-
-            button {
-                font-family: $raleway-font;
-            }
-
-            .video {
-                a {
-                    display: flex;
-                    align-items: center;
-                    column-gap: 25px;
-
-                    i {
-                        background-color: $secondaryColor;
-                        color: $whiteColor;
-                        font-size: 35px;
-                        padding: 5px 16px;
-                        border-radius: 50%;
-                    }
-
-                    span {
-                        color: $raisinBlackColor;
-                        font-size: 18px;
-                        line-height: 30px;
-                        font-weight: 500;
-                    }
-                }
-            }
         }
+
     }
 }
 
@@ -236,204 +208,169 @@
     }
 }
 
+// =================Our Dedicated Investigators===========================
+.our-investigators {
+    .card-body {
+        margin-top: -230px;
 
+        ul {
+            li {
+                background-color: $whiteColor;
+                width: 30px;
+                height: 30px;
+                margin-bottom: 10px;
+                text-align: center;
+                transition: background-color 0.3s ease;
+            }
+        }
 
+        .share-btn {
+            background-color: $secondaryColor;
+            color: $whiteColor;
+            width: 30px;
+            height: 30px;
+        }
 
+        .info {
+            background-color: $blackColor;
+            color: $whiteColor;
+            transition: background-color 0.3s ease;
+        }
 
-
-// ==============Responsive classes==============
-@media (max-width: 576px) {
-    .banner .container .carousel-caption p {
-        font-size: 16px;
-    }
-
-    .banner .container .carousel-caption p::after {
-        width: 235px;
-    }
-
-    .banner .container .carousel-caption h1 {
-        font-size: 25px;
-        margin-bottom: 30px;
-        font-weight: 600;
-        line-height: 35px;
-    }
-
-    .banner .carousel-img img {
-        height: 400px;
-    }
-
-    .banner .container .carousel-caption {
-        top: 45px;
-    }
-
-    .banner .banner-card .card .card-body .card-title {
-        font-weight: 500;
-        font-size: 18px;
-    }
-
-    .banner .banner-card form {
-        width: 100%;
-        flex-direction: column;
-        row-gap: 20px;
-    }
-
-    .banner .banner-card form input#submit {
-        width: 50%;
-    }
-
-    .banner .banner-card form input#solution {
-        width: 100%;
-        border: none;
-        outline: none;
-        padding-right: 5px;
-        line-height: 4;
-    }
-
-    .banner .banner-card form input#solution::placeholder {
-        white-space: normal;
-        line-height: 10;
-    }
-
-    .about-company .images .img-tow {
-        right: -7px;
-        width: 90%;
-    }
-
-    .about-company .company-details {
-        margin-top: 50px;
-        margin-left: 0px;
-    }
-
-    .about-company .company-details h1 {
-        margin: 20px 0px 30px 0px;
-    }
-
-    .about-company .company-details p {
-        line-height: 25px;
-        margin-bottom: 30px;
-    }
-
-    .about-company .company-details ul {
-        margin-bottom: 20px;
-    }
-
-    .about-company .company-details .company-videos {
-        row-gap: 30px;
-        flex-direction: column-reverse;
-        margin-top: 20px;
-    }
-
-    .about-company .company-details .company-videos button {
-        width: 80%;
-        justify-content: center;
-    }
-
-    .banner .banner-card .card img {
-        width: 20%;
-    }
-
-    .government-service .card img {
-        width: 20%;
-    }
-
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-    .banner .container .carousel-caption {
-        top: 50px;
-    }
-
-    .banner .container .carousel-caption h1 {
-        font-size: 30px;
-        margin-bottom: 35px;
-        margin-top: -15px;
-        font-weight: 600;
-        line-height: 45px;
-    }
-
-    .banner .carousel-img img {
-        height: 500px;
-    }
-
-    .banner .banner-card .card img {
-        width: 15%;
-    }
-
-    .banner .banner-card form {
-        width: 100%;
-    }
-
-    .banner .banner-card form input#solution {
-        width: 100%;
-        padding-right: 5px;
-        line-height: 4;
-        margin-top: -5px;
-        background: transparent;
-    }
-
-    .banner .banner-card form input#solution::placeholder {
-        white-space: normal;
-        line-height: 10;
-    }
-
-    .banner .banner-card form input#submit {
-        width: 35%;
-    }
-
-    .about-company .company-details {
-        margin-left: 0px;
-        margin-top: 50px;
-    }
-
-    .about-company .company-details .company-videos {
-        column-gap: 50px;
-    }
-
-    .government-service .card img {
-        width: 15%;
+        &:hover .info {
+            background-color: $secondaryColor;
+        }
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-    .banner .container .carousel-caption {
-        top: 90px;
+
+// ==============Best City Government & Municipal Service Based On USA===================
+section {
+    .best-city-government {
+        position: relative;
+
+        .images-and-overlay {
+            position: relative;
+
+            .cover-images-overlay-tow {
+                position: absolute;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .container {
+            .best-ciy-service-information {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -18%);
+                width: 84%;
+
+
+                .city-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    margin: auto;
+
+                    .videos-style {
+                        justify-content: center;
+                        display: flex;
+                        margin-bottom: 20px;
+                    }
+
+                    h1 {
+                        color: $whiteColor;
+                        margin-top: 50px;
+                    }
+                }
+
+                .footer-content {
+                    background-color: $whiteColor;
+                    padding: 90px 60px;
+
+                    ul {
+                        li {
+                            margin: 20px 0;
+
+
+                            .divide-row {
+                                margin: 20px 0;
+                                transition: all 1s ease-out;
+                            }
+
+                            a {
+                                color: $raisinBlackColor;
+                                font-family: $jost-font;
+                                font-weight: 500;
+                                font-size: 20px;
+                                list-style: 24px;
+                                transition: all 1s ease-out;
+
+                                i {
+                                    display: none;
+                                    transition: all 1s ease-out;
+                                }
+                            }
+
+                            &:hover .divide-row {
+                                background-color: $secondaryColor;
+                            }
+
+                            &:hover a {
+                                color: $secondaryColor;
+                            }
+
+                            &:hover a i {
+                                display: block;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
     }
-
-    .banner .container .carousel-caption h1 {
-        font-size: 50px;
-        font-weight: 700;
-        line-height: 65px;
-    }
-
-    .banner .carousel-img img {
-        height: 600px;
-    }
-
-    .banner .banner-card form {
-        width: 100%;
-    }
-
-    .banner .banner-card form input#submit {
-        width: 25%;
-    }
-
-    .about-company .company-details {
-        margin-left: 0px;
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    .about-company .company-details .company-videos {
-        justify-content: center;
-    }
-
-    .about-company .company-details .company-list {
-        margin-left: 100px;
-    }
-
-
 }
 
-@media (min-width: 993px) and (min-width: 1200px) {}
 
-@media (min-width: 1200px) and (max-width: 1400px) {}
+// ======================Sponsor Company Logo==========================
+.brand-logo {
+    margin-top: 550px;
+
+    .divide-row {
+        margin-bottom: 80px;
+        height: .5px;
+    }
+
+    .images-slide {
+        .item {
+            justify-content: center;
+            text-align: center;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width: 240px) {}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}

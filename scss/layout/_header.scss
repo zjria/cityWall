@@ -55,6 +55,7 @@ header {
     }
 
     .navbar-details {
+        background-color: $whiteColor;
         font-family: $roboto-font;
         font-weight: bold;
         padding: 9.8px 0px;
@@ -63,24 +64,21 @@ header {
             padding-left: 265px;
 
             .brand-logo {
-                background-color: #b59a6d;
-                width: 100%;
+                background-color: $secondaryColor;
                 position: absolute;
-                max-width: 25%;
+                top: -77px;
                 left: 0;
-                z-index: 1;
-                clear: both;
-                top: -76px;
+                padding-right: 80px;
+                height: 164px;
 
                 a {
                     display: flex;
-                    padding: 56.5px 0px;
+                    padding: 57px 20px;
                     float: right;
                     padding-right: 100px;
 
                     img {
-                        height: 50px;
-                        width: 200px;
+                        width: 120px;
                     }
                 }
 
@@ -110,7 +108,7 @@ header {
                     }
 
                     &:hover i {
-                        border-bottom: 1px solid $redColor;
+                        border-bottom: 1px solid $dangerColor;
                         color: $secondaryColor;
                     }
                 }
@@ -121,187 +119,16 @@ header {
 
 
 
-
 // ==============Responsive classes==============
-@media (max-width: 576px) {
-    header .top-header .top-header-content {
-        padding: 10px 0px;
-    }
+// Responsive: start 240px end: 1368px
+@media (min-width: 240px) {}
 
-    header .top-header {
-        flex-direction: column;
-    }
+@media (min-width: 576px) {}
 
-    header .top-header .top-header-content .container .contact-top-information {
-        padding-left: 0;
-        flex-direction: column;
-        grid-gap: 10px;
-    }
+@media (min-width: 768px) {}
 
-    header .top-header .top-header-content .container .contact-top-information .language-socialLink .language {
-        margin-right: 11px;
-    }
+@media (min-width: 992px) {}
 
-    header .top-header .top-header-content .container .contact-top-information .mobile-number-email {
-        column-gap: 40px;
-        justify-content: space-between;
-    }
+@media (min-width: 1200px) {}
 
-    header .top-header .top-header-content .container .contact-top-information .language-socialLink .socialLink ul {
-        column-gap: 6px;
-    }
-
-    header .navbar-details .container {
-        padding-left: 12px;
-    }
-
-    div#navbarSupportedContent {
-        background-color: white;
-        margin-top: 10px;
-    }
-
-    .language-socialLink {
-        justify-content: space-between;
-    }
-
-    header .navbar-details .container .brand-logo a {
-        padding: 10px 0px;
-        padding-right: 10px;
-    }
-
-    header .navbar-details .container .brand-logo {
-        background-color: #b59a6d;
-        width: fit-content;
-        position: static;
-        max-width: fit-content;
-    }
-
-    header .navbar-details .container .brand-logo a img {
-        height: 30px;
-        width: 120px;
-    }
-
-
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-    header .top-header .top-header-content {
-        padding: 5px 0px;
-    }
-
-    header .top-header {
-        flex-direction: column;
-    }
-
-    header .top-header .top-header-content .container .contact-top-information {
-        padding-left: 0;
-        flex-direction: column;
-        grid-gap: 10px;
-    }
-
-    header .top-header .top-header-content .container .contact-top-information .language-socialLink .language {
-        margin-right: 11px;
-    }
-
-    header .top-header .top-header-content .container .contact-top-information .mobile-number-email {
-        column-gap: 40px;
-        justify-content: space-between;
-    }
-
-    header .top-header .top-header-content .container .contact-top-information .language-socialLink .socialLink ul {
-        column-gap: 6px;
-    }
-
-    header .navbar-details .container {
-        padding-left: 0px;
-    }
-
-    div#navbarSupportedContent {
-        background-color: white;
-        margin-top: 10px;
-    }
-
-    .language-socialLink {
-        justify-content: space-between;
-    }
-
-    header .navbar-details .container .brand-logo a {
-        padding: 10px 0px;
-        padding-right: 10px;
-    }
-
-    header .navbar-details .container .brand-logo {
-        background-color: #b59a6d;
-        width: fit-content;
-        position: static;
-        max-width: fit-content;
-    }
-
-    header .navbar-details .container .brand-logo a img {
-        height: 30px;
-        width: 120px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-    header .top-header .top-header-content {
-        padding: 5px 0px;
-    }
-
-    header .top-header {
-        flex-direction: column;
-    }
-
-    header .top-header .top-header-content .container .contact-top-information {
-        padding-left: 0;
-        flex-direction: column;
-        grid-gap: 10px;
-    }
-
-    header .top-header .top-header-content .container .contact-top-information .language-socialLink .language {
-        margin-right: 11px;
-    }
-
-    header .top-header .top-header-content .container .contact-top-information .mobile-number-email {
-        column-gap: 40px;
-        justify-content: space-between;
-    }
-
-    header .top-header .top-header-content .container .contact-top-information .language-socialLink .socialLink ul {
-        column-gap: 6px;
-    }
-
-    header .navbar-details .container {
-        padding-left: 0px;
-    }
-
-    div#navbarSupportedContent {
-        background-color: white;
-        margin-top: 10px;
-    }
-
-    .language-socialLink {
-        justify-content: space-between;
-    }
-
-    header .navbar-details .container .brand-logo a {
-        padding: 10px 0px;
-        padding-right: 10px;
-    }
-
-    header .navbar-details .container .brand-logo {
-        background-color: #b59a6d;
-        width: fit-content;
-        position: static;
-        max-width: fit-content;
-    }
-
-    header .navbar-details .container .brand-logo a img {
-        height: 30px;
-        width: 120px;
-    }
-}
-
-@media (min-width: 993px) and (min-width: 1200px) {}
-
-@media (min-width: 1200px) and (max-width: 1400px) {}
+@media (min-width: 1400px) {}

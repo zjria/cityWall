@@ -19,5 +19,45 @@
 @import 'layout/sidebar';
 @import 'layout/footer';
 
-
 @import 'pages/home';
+
+
+
+// ==============Responsive classes==============
+// Responsive: start 240px end: 1368px
+
+// @media (min-width: 240px) {
+//     body {
+//         background-color: gray;
+//     }
+// }
+
+// @media (min-width: 576px) {
+//     body {
+//         background-color: rgb(215, 114, 114);
+//     }
+// }
+
+// @media (min-width: 768px) {
+//     body {
+//         background-color: rgb(24, 12, 12);
+//     }
+// }
+
+// @media (min-width: 992px) {
+//     body {
+//         background-color: rgb(65, 169, 185);
+//     }
+// }
+
+// @media (min-width: 1200px) {
+//     body {
+//         background-color: rgb(104, 167, 22);
+//     }
+// }
+
+// @media (min-width: 1400px) {
+//     body {
+//         background-color: rgb(194, 5, 121);
+//     }
+// }

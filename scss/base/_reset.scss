@@ -95,19 +95,91 @@ span.small-circle-end {
     color: $secondaryColor;
 }
 
+.cover-images-overlay {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+.cover-images-overlay-tow {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0% 0% 22% 22%/0% 0% 20% 20%;
 
-// ==============Responsive classes==============
-@media (max-width: 576px) {
-    section {
-        margin: 50px 0px;
+}
+
+.divide-row {
+    background-color: #00000047;
+    content: "";
+    height: 1px;
+}
+
+.videos-style {
+    a {
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+
+        i {
+            background-color: $secondaryColor;
+            color: $whiteColor;
+            font-size: 35px;
+            padding: 5px 16px;
+            border-radius: 50%;
+        }
+
+        span {
+            color: $raisinBlackColor;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 500;
+        }
     }
 }
 
-@media (min-width: 577px) and (max-width: 768px) {}
+.videos-style-big {
+    a {
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+        justify-content: center;
 
-@media (min-width: 768px) and (max-width: 992px) {}
+        i {
+            background-color: $secondaryColor;
+            color: $whiteColor;
+            font-size: 40px;
+            padding: 5px 16px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 2px 9px #887d7aba;
+        }
 
-@media (min-width: 993px) and (min-width: 1200px) {}
+        span {
+            color: $raisinBlackColor;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+    }
+}
 
-@media (min-width: 1200px) and (max-width: 1400px) {}
+
+// ==============Responsive classes==============
+// Responsive: start 240px end: 1368px
+@media (min-width: 240px) {}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}

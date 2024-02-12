@@ -1,19 +1,11 @@
-// Mixin for a flex container
-@mixin flex-container-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 @mixin brand-style-css {
     background-color: $whiteColor;
-    position: absolute;
     content: "";
+    position: absolute;
     width: 100px;
-    height: 86.5px;
-    z-index: 1;
+    height: 87px;
     right: 0;
-    top: 76px;
+    bottom: 0;
 }
 
 @mixin square-style {
@@ -23,6 +15,7 @@
     height: 10px;
 }
 
+
 // add style করার নিয়ম
 // .about button {
 //     @include flex-container-row;
@@ -31,24 +24,15 @@
 
 
 // ==============Responsive classes==============
-@media (max-width: 576px) {
-    header .navbar-details .container .brand-logo .brand-style {
-        display: none;
-    }
-}
+// Responsive: start 240px end: 1368px
+@media (min-width: 240px) {}
 
-@media (min-width: 577px) and (max-width: 768px) {
-    header .navbar-details .container .brand-logo .brand-style {
-        display: none;
-    }
-}
+@media (min-width: 576px) {}
 
-@media (min-width: 768px) and (max-width: 992px) {
-    header .navbar-details .container .brand-logo .brand-style {
-        display: none;
-    }
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 993px) and (min-width: 1200px) {}
+@media (min-width: 992px) {}
 
-@media (min-width: 1200px) and (max-width: 1400px) {}
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
