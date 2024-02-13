@@ -8,68 +8,76 @@
 // 800 – Extra Bold (Ultra Bold)
 
 h1 {
-    color: $raisinBlackColor;
-    font-family: $raleway-font;
-    font-size: 48px;
-    line-height: 60px;
-    font-weight: 800;
+  color: $raisinBlackColor;
+  font-family: $raleway-font;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 800;
 }
 
 h2 {
-    font-size: 32px;
+  color: $raisinBlackColor;
+  font-family: $raleway-font;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 700;
 }
 
 h3 {
-    font-family: $raleway-font;
-    font-size: 24px;
-    line-height: 34px;
-    font-weight: 700;
+  font-family: $raleway-font;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
 }
 
 h3.tow {
-    font-family: $raleway-font;
-    color: $GainsboroColor;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 600;
+  font-family: $raleway-font;
+  color: $GainsboroColor;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
 }
 
 h4 {
-    font-family: $raleway-font;
-    font-size: 22px;
-    line-height: 30px;
+  font-family: $raleway-font;
+  font-size: 22px;
+  line-height: 30px;
 }
 
 h5 {
-    font-family: $raleway-font;
-    font-size: 20px;
-    line-height: 34px;
-    font-weight: 600;
+  font-family: $raleway-font;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 600;
 }
 
 h6 {
-    font-family: $jost-font;
-    font-size: 18px;
-    line-height: 34px;
+  font-family: $jost-font;
+  font-size: 18px;
+  line-height: 34px;
 }
 
 p {
-    color: $primaryColor;
-    line-height: 24px;
+  color: $primaryColor;
+  line-height: 24px;
 }
-
-
 
 // ==============Responsive classes==============
 // Responsive: start 240px end: 1368px
-@media (min-width: 240px) {}
+@media (min-width: 240px) {
+}
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}
