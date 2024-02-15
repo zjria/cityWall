@@ -370,8 +370,6 @@ section {
   .container {
     .upcaming-evevnts-card {
       .card {
-        img {
-        }
         .card-body {
           a {
             font-size: 20px;
@@ -440,10 +438,186 @@ section {
       }
       .card {
         background-color: $secondaryColor;
+        .eyes-download-icons {
+          span {
+            i {
+              font-size: 20px;
+            }
+          }
+          .download-icons {
+            background-color: $whiteColor;
+            padding: 7px 12px;
+            border-radius: 50%;
+            i {
+              color: $secondaryColor;
+            }
+          }
+        }
       }
     }
   }
 }
+
+// =================Goodwords From People===========================
+.our-testimonials {
+  .container {
+    .testimonial-slider {
+      .slick-dots li button:before {
+        font-size: 40px;
+      }
+      .card {
+        .testi-single-box {
+          position: relative;
+          border-radius: 2px;
+          box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.07);
+          margin: 0 0px;
+          z-index: 1;
+          transition: 0.9s all;
+          &:after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: $secondaryColor;
+            top: 0;
+            left: 0;
+            border-radius: 2px;
+            z-index: -1;
+            transition: 0.5s;
+            transform: scale(0.2, 1);
+            opacity: 0;
+          }
+          &:hover:after {
+            transform: scale(1);
+            opacity: 1;
+          }
+          > i {
+            font-size: 40px;
+            color: rgb(73, 84, 94);
+          }
+          ul {
+            li {
+              color: $secondaryColor;
+            }
+          }
+          &:hover ul li {
+            color: goldenrod;
+          }
+          .name-title {
+            h3 {
+              color: $secondaryColor;
+            }
+          }
+          &:hover .name-title h3 {
+            color: $blackColor;
+          }
+        }
+        .small-box-border {
+          position: absolute;
+          content: "";
+          top: 10px;
+          left: 10px;
+          border-radius: 2px;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          border: 1px dotted $secondaryColor;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+// =================Explore our beautiful city highlights photos===========================
+.city-highlights-photos {
+  background-color: $EigengrauColor;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  max-height: 500px;
+  .container-fluid {
+    .Portfolio-header {
+      .visit-link {
+        a {
+          background-color: $secondaryColor;
+          padding: 20px 40px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+      }
+    }
+    .card {
+      overflow: hidden;
+      img {
+        transition: transform 2s;
+      }
+      &:hover img {
+        transform: scale(1.1);
+      }
+      .image-title {
+        background-color: $EigengrauColor;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 93%;
+        .button-background-color {
+          width: 14%;
+          height: 100%;
+          position: absolute;
+          right: 0;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          background-color: $secondaryColor;
+          clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+
+          button {
+            outline: none;
+            border: none;
+            padding: 0px 4px;
+            border-radius: 50%;
+            i {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// =================Latest From Our Newsroom=================
+.Newsroom {
+  margin-top: 250px;
+  .container {
+    .card {
+      box-shadow: 2px 2px 20px 2px #0000001a;
+      .card-body {
+        .date-comment {
+          .date {
+            background-color: $secondaryColor;
+            -webkit-clip-path: polygon(
+              71% 0,
+              100% 19%,
+              70% 21%,
+              69% 100%,
+              0 100%,
+              0 0
+            );
+            clip-path: polygon(69% 0, 100% 34%, 70% 33%, 69% 100%, 0 100%, 0 0);
+            display: inline-block;
+            padding: 2px 40px 2px 20px;
+            margin-top: -35px;
+            justify-content: start;
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}
+
 // ================Responsive=======================
 @media (min-width: 240px) {
 }
