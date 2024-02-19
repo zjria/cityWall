@@ -1,13 +1,126 @@
-// ==============Responsive classes==============
-// Responsive: start 240px end: 1368px
-@media (min-width: 240px) {}
+footer {
+  margin-top: 100px;
+  background-color: $EigengrauFooterColor;
+  padding: 120px 0px 0px 0px;
+  .subscribe-field {
+    background-color: $EigengrauSubscribe;
+    padding: 30px 0px;
+    form {
+      background-color: $richBlack;
+      width: -moz-fit-content;
+      width: fit-content;
+      border-radius: 10px;
+      align-items: center;
+      float: right;
+      input {
+        font-family: $jost-font;
+        background-color: $richBlack;
+        border: 0;
+        outline: none;
+        padding: 10px 20px;
+        width: 280px;
+        height: 60px;
+        font-size: 16px;
+        border-radius: 5px;
+        color: $whiteColor;
+      }
+      button {
+        background-color: $secondaryColor;
+        border: none;
+        outline: none;
+        width: 140px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 0px 5px 5px 0px;
+        color: #fff;
+        font-size: 16px;
+        font-family: "Jost", sans-serif;
+      }
+    }
+  }
+  .our-details {
+    padding: 70px 0px;
+    .card {
+      img {
+        width: 60%;
+      }
+      .card-body {
+        p {
+          font-family: $raleway-font;
+          font-size: 15px;
+          line-height: 28px;
+        }
+      }
+      .social-info {
+        ul {
+          li {
+            a {
+              .link-icons {
+                border: 1px dotted #b59a6d;
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                transition: 0.5s;
+              }
+              &:hover .link-icons {
+                background-color: #b59a6d;
+              }
+            }
+          }
+        }
+      }
+      .industry-info h4,
+      .touch-info h4,
+      .working-info h4 {
+        transition: 2s;
+      }
 
-@media (min-width: 576px) {}
+      &:hover .industry-info h4,
+      &:hover .touch-info h4,
+      &:hover .working-info h4 {
+        background-color: $secondaryColor;
+        border-radius: 2px;
+      }
+    }
+  }
+  .term-and-condition {
+    background-color: $EigengrauTermConditionBG;
+    padding: 20px 0px;
+    .copy-right {
+      span {
+        color: $secondaryColor;
+      }
+    }
 
-@media (min-width: 768px) {}
+    .button-div {
+      margin-top: -50px;
+      .up-to-down-btn {
+        border: none;
+        outline: none;
+        background-color: $secondaryColor;
+        color: white;
+        padding: 6px 12px;
+        font-size: 18px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
 
-@media (min-width: 992px) {}
+/* ==============Responsive classes============== */
+/* Responsive: start 320px end: 1368px  */
 
-@media (min-width: 1200px) {}
+@media screen and (min-width: 320px) and (max-width: 576px) {
+}
 
-@media (min-width: 1400px) {}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+}

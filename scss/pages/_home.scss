@@ -595,6 +595,8 @@ section {
       box-shadow: 2px 2px 20px 2px #0000001a;
       .card-body {
         .date-comment {
+          color: $QuickSilver;
+          font-family: $jost-font;
           .date {
             background-color: $secondaryColor;
             -webkit-clip-path: polygon(
@@ -605,13 +607,30 @@ section {
               0 100%,
               0 0
             );
-            clip-path: polygon(69% 0, 100% 34%, 70% 33%, 69% 100%, 0 100%, 0 0);
+            clip-path: polygon(69% 0, 100% 32%, 70% 33%, 69% 100%, 0 100%, 0 0);
             display: inline-block;
             padding: 2px 40px 2px 20px;
             margin-top: -35px;
             justify-content: start;
             text-align: start;
           }
+          i {
+            color: $secondaryColor;
+          }
+        }
+        .card-title {
+          color: $secondaryColor;
+          margin-top: 30px;
+        }
+      }
+      .card-footer {
+        a {
+          text-decoration: underline;
+          font-size: 18px;
+          list-style: 34px;
+          font-family: $jost-font;
+          font-weight: 500;
+          color: $secondaryColor;
         }
       }
     }
