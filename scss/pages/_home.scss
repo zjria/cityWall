@@ -330,8 +330,8 @@ section {
   }
 }
 
-// ======================Sponsor Company Logo==========================
-.brand-logo {
+// Sponsor Company Logo
+.company-brand-logo {
   margin-top: 550px;
 
   .divide-row {
@@ -458,7 +458,7 @@ section {
   }
 }
 
-// =================Goodwords From People===========================
+// =================Good words From People===========================
 .our-testimonials {
   .container {
     .testimonial-slider {
@@ -637,21 +637,20 @@ section {
   }
 }
 
-// ================Responsive=======================
-@media (min-width: 240px) {
+/* ==============Responsive classes============== */
+/* Responsive: start 320px end: 1368px  */
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
 }
 
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1400px) {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
 }

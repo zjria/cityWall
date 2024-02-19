@@ -2,36 +2,20 @@
 
 // Placeholder for a common text style
 %common-text-style {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: #333;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #333;
 }
 
 // Placeholder for a clearfix
 %clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
 
-    &:before,
-    &:after {
-        content: "";
-        display: table;
-    }
-
-    &:after {
-        clear: both;
-    }
+  &:after {
+    clear: both;
+  }
 }
-
-
-// ==============Responsive classes==============
-// Responsive: start 240px end: 1368px
-@media (min-width: 240px) {}
-
-@media (min-width: 576px) {}
-
-@media (min-width: 768px) {}
-
-@media (min-width: 992px) {}
-
-@media (min-width: 1200px) {}
-
-@media (min-width: 1400px) {}

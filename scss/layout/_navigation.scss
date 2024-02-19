@@ -1,52 +1,97 @@
-// _navigation.scss
+.navbar-details {
+  font-size: 16px;
+  background-color: $whiteColor;
+  font-family: $roboto-font;
+  font-weight: bold;
+  padding: 9.8px 0px;
 
-.navigation-bar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+  .container {
+    padding-left: 265px;
 
-.nav-menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+    .brand-logo {
+      background-color: $secondaryColor;
+      position: absolute;
+      top: -77px;
+      left: 0;
+      padding-right: 80px;
+      height: 164px;
 
-.nav-item {
-    margin-right: 30px;
+      a {
+        display: flex;
+        padding: 57px 20px;
+        float: right;
+        padding-right: 100px;
 
-    &:last-child {
-        margin-right: 0;
+        img {
+          width: 130px;
+        }
+      }
+
+      .brand-style {
+        @include brand-style-css;
+      }
     }
-}
 
-.nav-link {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
+    .nav-item {
+      .nav-link {
+        color: $blackColor;
+        padding: 0px;
 
-    &:hover {
-        color: #ffd700; // Change to your desired hover color
+        span,
+        i {
+          border-bottom: 1px solid transparent;
+        }
+
+        &:hover span {
+          border-bottom: 1px solid $blackColor;
+          color: $secondaryColor;
+        }
+
+        &:hover i {
+          border-bottom: 1px solid $dangerColor;
+          color: $secondaryColor;
+        }
+        .dash-icons {
+          display: none;
+        }
+        .plus-icons {
+          display: none;
+        }
+      }
     }
+  }
 }
 
+/* ==============Responsive classes============== */
+/* Responsive: start 320px end: 1368px  */
 
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .navbar-details .container .brand-logo a {
+    padding: 5px 8px;
+    float: right;
+    padding-right: 0px;
+  }
+  .navbar-details .container .brand-logo {
+    padding-right: 15px;
+    height: 45px;
+    top: 8px;
+  }
+  .navbar-details .container .nav-item .nav-link .dash-icons {
+    display: block;
+  }
+  .navbar-details .container .nav-item .nav-link .plus-icons {
+    display: block;
+  }
+}
 
-// ==============Responsive classes==============
-// Responsive: start 240px end: 1368px
-@media (min-width: 240px) {}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
 
-@media (min-width: 576px) {}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
 
-@media (min-width: 768px) {}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
 
-@media (min-width: 992px) {}
-
-@media (min-width: 1200px) {}
-
-@media (min-width: 1400px) {}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+}

@@ -1,8 +1,7 @@
-// Reset box model and remove margin and padding
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,9 +15,9 @@ section {
 
 ul,
 ol {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 a {
@@ -30,7 +29,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -178,22 +178,20 @@ span.small-circle-end {
   }
 }
 
-// ==============Responsive classes==============
-// Responsive: start 240px end: 1368px
-@media (min-width: 240px) {
+/* ==============Responsive classes============== */
+/* Responsive: start 320px end: 1368px  */
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
 }
 
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1400px) {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
 }

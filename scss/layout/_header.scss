@@ -1,134 +1,101 @@
 header {
-    position: relative;
+  position: relative;
 
-    .top-header {
-        font-family: $jost-font;
-        display: flex;
-        margin: auto;
-        justify-content: center;
+  .top-header {
+    font-family: $jost-font;
 
-        .top-header-content {
-            background-color: $blackColor;
-            color: $whiteColor;
-            padding: 18px 0px;
-            width: 100%;
+    .top-header-content {
+      background-color: $blackColor;
+      color: $whiteColor;
+      padding: 18px 0px;
+      width: 100%;
 
-            .container {
-                .contact-top-information {
-                    padding-left: 255px;
+      .contact-top-information {
+        padding-left: 255px;
 
-                    a {
-                        color: $whiteColor;
-                    }
-
-                    .mobile-number-email {
-                        column-gap: 80px;
-                    }
-
-                    .language-socialLink {
-                        .language {
-                            margin-right: 50px;
-
-                            select#language {
-                                border: none;
-                                background: transparent;
-                                outline: none;
-                                color: $whiteColor;
-
-                                option {
-                                    background-color: $blackColor;
-                                }
-                            }
-                        }
-
-                        .socialLink {
-                            ul {
-                                margin-left: 15px;
-                                column-gap: 15px;
-                            }
-                        }
-                    }
-                }
-            }
-
+        a {
+          color: $whiteColor;
         }
-    }
 
-    .navbar-details {
-        background-color: $whiteColor;
-        font-family: $roboto-font;
-        font-weight: bold;
-        padding: 9.8px 0px;
+        .mobile-number-email {
+          column-gap: 80px;
 
-        .container {
-            padding-left: 265px;
-
-            .brand-logo {
-                background-color: $secondaryColor;
-                position: absolute;
-                top: -77px;
-                left: 0;
-                padding-right: 80px;
-                height: 164px;
-
-                a {
-                    display: flex;
-                    padding: 57px 20px;
-                    float: right;
-                    padding-right: 100px;
-
-                    img {
-                        width: 120px;
-                    }
-                }
-
-                .brand-style {
-                    @include brand-style-css;
-                }
+          a {
+            .phone {
+              background: $whiteColor;
+              color: $blackColor;
+              padding: 1px 3px;
+              border-radius: 4px;
+              transition: 2s;
             }
-
-            .nav-item {
-                .nav-link {
-                    color: $blackColor;
-                    padding: 0px;
-
-                    span,
-                    i {
-                        border-bottom: 1px solid transparent;
-                    }
-
-                    i {
-                        padding-left: 10px;
-                        margin-top: 5px;
-                    }
-
-                    &:hover span {
-                        border-bottom: 1px solid $blackColor;
-                        color: $secondaryColor;
-                    }
-
-                    &:hover i {
-                        border-bottom: 1px solid $dangerColor;
-                        color: $secondaryColor;
-                    }
-                }
+            &:hover .phone {
+              background-color: $secondaryColor;
+              color: $whiteColor;
             }
+          }
+          a {
+            .email {
+              background: $whiteColor;
+              color: $blackColor;
+              padding: 1px 3px;
+              border-radius: 2px;
+              transition: 2s;
+            }
+            &:hover .email {
+              background-color: $secondaryColor;
+              color: $whiteColor;
+            }
+          }
         }
+
+        .language-socialLink {
+          .language {
+            margin-right: 50px;
+
+            select#language {
+              color: $whiteColor;
+              border: none;
+              background: rgba(0, 0, 0, 0);
+              outline: none;
+              cursor: pointer;
+
+              option {
+                background-color: $blackColor;
+              }
+            }
+          }
+
+          .socialLink {
+            ul {
+              margin-left: 15px;
+              column-gap: 15px;
+              li:nth-child(even) {
+                width: 20px;
+                background: $secondaryColor;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
+/* ==============Responsive classes============== */
+/* Responsive: start 320px end: 1368px  */
 
+@media screen and (min-width: 320px) and (max-width: 576px) {
+}
 
-// ==============Responsive classes==============
-// Responsive: start 240px end: 1368px
-@media (min-width: 240px) {}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
 
-@media (min-width: 576px) {}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
 
-@media (min-width: 768px) {}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
 
-@media (min-width: 992px) {}
-
-@media (min-width: 1200px) {}
-
-@media (min-width: 1400px) {}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+}
