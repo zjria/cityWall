@@ -35,3 +35,7 @@ $(".testimonial-slider").slick({
 });
 
 // navbar js
+
+document.querySelector(
+  "#sticky-header > div > div > div.col-lg-9 > nav > div.cleeny-btn > a"
+);

@@ -1,3 +1,29 @@
+.home_one form.banner-form {
+  border: 2px dashed $secondaryColor;
+  padding: 5px 5px 5px 10px;
+  width: 70%;
+
+  input#solution {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding-right: 10px;
+  }
+
+  input#solution::placeholder {
+    white-space: nowrap;
+  }
+
+  input#submit {
+    width: 20%;
+    border: none;
+    outline: none;
+    background-color: $secondaryColor;
+    color: $whiteColor;
+    padding: 5px;
+  }
+}
+
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
 
