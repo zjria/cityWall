@@ -1,4 +1,4 @@
-// _buttons.scss
+//buttons one
 .cityWall-btn a {
   display: inline-block;
   overflow: hidden;
@@ -52,6 +52,7 @@
   right: auto;
 }
 
+//buttons two
 .cityWall-btn-two a {
   display: inline-block;
   overflow: hidden;
@@ -117,7 +118,81 @@
   padding: 2px 12px;
   transition: 0.2s;
 }
+// play buttons
 
+#openBtn {
+  position: relative;
+  background-color: $secondaryColor;
+  outline: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+}
+#openBtn::before,
+#openBtn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: $primaryColor;
+  z-index: -1;
+  opacity: 0.7;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+#openBtn::before {
+  animation: play 2s ease-out infinite;
+}
+#openBtn::after {
+  animation: play 2s 1s ease-out infinite;
+}
+@keyframes play {
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+//video two
+#openBtnTwo {
+  position: relative;
+  background-color: $secondaryColor;
+  outline: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+}
+#openBtnTwo::before,
+#openBtnTwo::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: $primaryColor;
+  z-index: -1;
+  opacity: 0.7;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+#openBtnTwo::before {
+  animation: playTwo 2s ease-out infinite;
+}
+#openBtnTwo::after {
+  animation: playTwo 2s 1s ease-out infinite;
+}
+@keyframes playTwo {
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
 

@@ -1,4 +1,6 @@
-* {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,17 +41,6 @@ span.small-circle-start {
   position: relative;
   margin-right: 30px;
 
-  &::after {
-    content: "";
-    width: 15px;
-    height: 15px;
-    border: 1px dashed #b59a6d;
-    left: 0;
-    border-radius: 50%;
-    position: absolute;
-    top: 4px;
-  }
-
   &::before {
     content: "";
     width: 15px;
@@ -59,24 +50,40 @@ span.small-circle-start {
     border-radius: 50%;
     position: absolute;
     top: 4px;
+    animation: circle 2s linear infinite;
+    @keyframes circle {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  &::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px dashed #b59a6d;
+    left: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    animation: circleTwo 2s linear infinite;
+    @keyframes circleTwo {
+      0% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
   }
 }
 
 span.small-circle-end {
   position: relative;
   margin-left: 10px;
-
-  &::after {
-    content: "";
-    width: 15px;
-    height: 15px;
-    border: 1px dashed #b59a6d;
-    left: 0;
-    border-radius: 50%;
-    position: absolute;
-    top: 4px;
-  }
-
   &::before {
     content: "";
     width: 15px;
@@ -86,6 +93,34 @@ span.small-circle-end {
     border-radius: 50%;
     position: absolute;
     top: 4px;
+    animation: circle 2s linear infinite;
+    @keyframes circle {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  &::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px dashed #b59a6d;
+    left: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    animation: circleTwo 2s linear infinite;
+    @keyframes circleTwo {
+      0% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
   }
 }
 

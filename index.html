@@ -276,10 +276,12 @@
                     </div>
                 </div>
             </div>
-            <form action="#" class="mt-5 m-auto d-flex align-items-center banner-form">
-                <input type="text" name="solution" id="solution"
-                    placeholder="The official guide to living, working, visiting, and investing in Texas">
-                <input type="submit" id="submit" value="Find Your Solution">
+            <form action="#" class="bg-warning mt-5 m-auto ">
+                <div class="d-flex banner-input-field input-field">
+                    <input type="text" name="solution" id="solution"
+                        placeholder="The official guide to living, working, visiting, and investing in Texas">
+                    <input type="submit" id="submit" value="Find Your Solution">
+                </div>
             </form>
         </div>
     </div>
@@ -291,7 +293,8 @@
                 <div class="col-12 col-md-12 col-xl-5">
                     <div class="images">
                         <img class="img-fluid img-one" src="images/01_home/about-company/image-01.png" alt="">
-                        <img class="img-fluid img-tow" src="images/01_home/about-company/image-02.png" alt="">
+                        <img class="img-fluid img-tow left-slider" src="images/01_home/about-company/image-02.png"
+                            alt="">
                     </div>
                 </div>
                 <div class="col-12 col-md-12 col-xl-7">
@@ -322,17 +325,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="company-videos d-flex align-items-center">
-                            <button class="btn-primary-style" type="submit">Visit Museum <i
-                                    class="bi bi-arrow-right"></i>
-                            </button>
-                            <div class="video">
-                                <a href="https://www.youtube.com" class="btn-watch-video fancybox fancybox.iframe">
-                                    <i class="bi bi-play"></i>
-                                    <span>Video Intro <br>
-                                        About Our Municipal</span>
-                                </a>
+                        <div class="company-videos d-flex align-items-center cityWall-btn-two">
+                            <a href="#">Visit Museum <i class="bi bi-arrow-right"></i></a>
+
+                            <!-- video -->
+
+                            <!-- Video Popup Button -->
+                            <div class="btn-text align-items-center d-flex ">
+                                <button id="openBtn"><i class="bi bi-play"></i></button>
+                                <span class="ms-3 ">Video Intro <br>
+                                    About Our Municipal</span>
                             </div>
+                            <!-- Video Popup Container -->
+                            <div id="videoPopup" class="video-popup">
+                                <div class="video-popup-content">
+                                    <span id="closeBtn" class="close">&times;</span>
+                                    <video id="videoPlayer" width="760" height="415" controls>
+                                        <source
+                                            src="video/Dealing with Difficult Life Situations - Q&A With Nouman Ali Khan.mp4"
+                                            type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -480,7 +497,7 @@
                     <div class="card h-100 border-0">
                         <img src="images/01_home/investigator/david.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <ul>
+                            <ul class="social-links show">
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
                                             class="fa-brands fa-facebook-f"></i></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
@@ -488,7 +505,8 @@
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
                                             class="fa-brands fa-instagram"></i></a></li>
                             </ul>
-                            <button class="share-btn border-0"><i class="fa-solid fa-share-nodes"></i></button>
+                            <button class="share-btn border-0 share-button"><i
+                                    class="fa-solid fa-share-nodes"></i></button>
                             <div class="info mt-4 p-2">
                                 <h4 class="card-title tow text-white ps-3">David</h4>
                                 <p class="card-text text-white ps-3">Chief Engineer</p>
@@ -498,9 +516,9 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 border-0">
-                        <img src="images/01_home/investigator/brawn.png" class="card-img-top" alt="...">
+                        <img src="images/01_home/investigator/david.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <ul>
+                            <ul class="social-links show">
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
                                             class="fa-brands fa-facebook-f"></i></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
@@ -508,10 +526,75 @@
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
                                             class="fa-brands fa-instagram"></i></a></li>
                             </ul>
-                            <button class="share-btn border-0"><i class="fa-solid fa-share-nodes"></i></button>
+                            <button class="share-btn border-0 share-button"><i
+                                    class="fa-solid fa-share-nodes"></i></button>
                             <div class="info mt-4 p-2">
-                                <h4 class="card-title tow text-white ps-3">Brown</h4>
-                                <p class="card-text text-white ps-3">Sr. Engineer</p>
+                                <h4 class="card-title tow text-white ps-3">David</h4>
+                                <p class="card-text text-white ps-3">Chief Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="images/01_home/investigator/david.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <ul class="social-links show">
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                            class="fa-brands fa-vimeo-v"></i></a></li>
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                            <button class="share-btn border-0 share-button"><i
+                                    class="fa-solid fa-share-nodes"></i></button>
+
+                            <div class="info mt-4 p-2">
+                                <h4 class="card-title tow text-white ps-3">David</h4>
+                                <p class="card-text text-white ps-3">Chief Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="images/01_home/investigator/david.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <ul class="social-links show">
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                            class="fa-brands fa-vimeo-v"></i></a></li>
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                            <button class="share-btn border-0 share-button"><i
+                                    class="fa-solid fa-share-nodes"></i></button>
+                            <div class="info mt-4 p-2">
+                                <h4 class="card-title tow text-white ps-3">David</h4>
+                                <p class="card-text text-white ps-3">Chief Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="images/01_home/investigator/brawn.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <ul id="social-links">
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                            class="fa-brands fa-vimeo-v"></i></a></li>
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                            <button class="share-btn border-0" id="share-button"><i
+                                    class="fa-solid fa-share-nodes"></i></button>
+                            <div class="info mt-4 p-2">
+                                <h4 class="card-title tow text-white ps-3">David</h4>
+                                <p class="card-text text-white ps-3">Chief Engineer</p>
                             </div>
                         </div>
                     </div>
@@ -555,7 +638,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -566,15 +649,39 @@
             <div class="images-and-overlay">
                 <img class="img-fluid" src="images/01_home/best-city/image-footer.png" alt="best-city">
                 <div class="cover-images-overlay-tow"></div>
+
+
             </div>
+
             <div class="container">
+
                 <div class="best-ciy-service-information">
                     <div class="city-content">
-                        <div class="videos-style-big">
+                        <!-- <div class="videos-style-big">
                             <a href="https://www.youtube.com" class="btn-watch-video fancybox fancybox.iframe">
                                 <i class="bi bi-play"></i>
                             </a>
+                        </div> -->
+                        <!-- video two -->
+                        <!-- Video Popup Button -->
+                        <div class="btn-text text-center  ">
+                            <button id="openBtnTwo"><i class="bi bi-play"></i></button>
                         </div>
+                        <!-- Video Popup Container -->
+                        <div id="videoPopupTwo" class="video-popupTwo">
+                            <div class="video-popupTwo-content">
+                                <span id="closeBtnTwo" class="close closeTwo">&times;</span>
+                                <video id="videoPlayerTwo" width="760" height="415" controls>
+                                    <source
+                                        src="video/Dealing with Difficult Life Situations - Q&A With Nouman Ali Khan.mp4"
+                                        type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+
+
+
                         <h1>Best City Government & Municipal <br>
                             Service Based On USA</h1>
                     </div>
@@ -844,7 +951,7 @@
                 <div class="col-md-5 ps-2 ">
                     <div class="download-city bg-white p-5">
                         <h2>Download City Recent <b></b> Documents</h2>
-                        <div class="card mb-2 p-4 rounded-0 border-0 ">
+                        <div class="card mb-2 p-4 rounded-0">
                             <div class="eyes-download-icons d-flex justify-content-between align-items-center mb-2 ">
                                 <span class="text-white "><i class="bi bi-eye"></i></span>
                                 <span class="download-icons"><i class="bi bi-download"></i></span>
@@ -852,7 +959,7 @@
                             <h6 class="text-white ">june 07. 2024</h6>
                             <h3 class="text-white ">Economy growth rates</h3>
                         </div>
-                        <div class="card p-4 rounded-0 border-0 ">
+                        <div class="card p-4 rounded-0 ">
                             <div class="eyes-download-icons d-flex justify-content-between align-items-center mb-2 ">
                                 <span class="text-white "><i class="bi bi-eye"></i></span>
                                 <span class="download-icons"><i class="bi bi-download"></i></span>

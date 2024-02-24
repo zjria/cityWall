@@ -1,26 +1,36 @@
-.home_one form.banner-form {
-  border: 2px dashed $secondaryColor;
-  padding: 5px 5px 5px 10px;
-  width: 70%;
+.banner-card {
+  form {
+    width: 70%;
+    border: 1px dashed $secondaryColor;
+    transition: border 1s;
 
-  input#solution {
-    width: 80%;
-    border: none;
-    outline: none;
-    padding-right: 10px;
-  }
+    .banner-input-field {
+      input#solution {
+        width: 80%;
+        border: none;
+        outline: none;
+        padding: 5px 10px;
+      }
 
-  input#solution::placeholder {
-    white-space: nowrap;
-  }
-
-  input#submit {
-    width: 20%;
-    border: none;
-    outline: none;
-    background-color: $secondaryColor;
-    color: $whiteColor;
-    padding: 5px;
+      input#solution::placeholder {
+        white-space: nowrap;
+      }
+      input#submit {
+        width: 20%;
+        border: none;
+        outline: none;
+        background-color: $secondaryColor;
+        color: $whiteColor;
+        padding: 5px;
+        transition: background 1s;
+        &:hover {
+          background-color: $primaryColor;
+        }
+      }
+    }
+    &:hover {
+      border: 1px dashed $primaryColor;
+    }
   }
 }
 

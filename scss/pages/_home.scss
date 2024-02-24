@@ -109,6 +109,20 @@
       bottom: -20px;
       width: 80%;
     }
+    .left-slider {
+      animation: leftSlider 2s linear forwards;
+
+      @keyframes leftSlider {
+        0% {
+          transform: translate(-100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(0px);
+          opacity: 1;
+        }
+      }
+    }
   }
 
   .company-details {
@@ -160,6 +174,81 @@
   }
 }
 
+/* Video Popup Styles */
+
+.video-popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.video-popup-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+.video-popupTwo {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.video-popupTwo-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-weight: bold;
+  top: -15%;
+  right: -39%;
+  font-size: 50px;
+  position: absolute;
+}
+.closeTwo {
+  color: #aaa;
+  float: right;
+  font-weight: bold;
+  top: -15%;
+  right: -20%;
+  font-size: 50px;
+  position: absolute;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-text span {
+  font-family: $raleway-font;
+  font-size: 18px;
+  line-height: 30px;
+}
+
 // ==================Find Government Services Section=================
 .government-service {
   background-color: $WhiteSmokeColor;
@@ -189,6 +278,16 @@
 
     .card-footer {
       margin-top: 20px;
+      .card-btn {
+        overflow: hidden !important;
+        display: inline-block;
+        i {
+          transition: 2s;
+        }
+        &:hover i {
+          font-size: 20px;
+        }
+      }
     }
 
     &:hover .card-btn {
@@ -201,7 +300,6 @@
 .our-investigators {
   .card-body {
     margin-top: -230px;
-
     ul {
       li {
         background-color: $whiteColor;
@@ -230,6 +328,9 @@
       background-color: $secondaryColor;
     }
   }
+}
+.show {
+  visibility: hidden;
 }
 
 // ==============Best City Government & Municipal Service Based On USA===================
@@ -440,6 +541,8 @@ section {
             background-color: $whiteColor;
             padding: 7px 12px;
             border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.8);
             i {
               color: $secondaryColor;
             }
