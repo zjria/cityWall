@@ -135,6 +135,8 @@ span.small-circle-end {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
 }
 
 .cover-images-overlay-tow {
@@ -145,6 +147,8 @@ span.small-circle-end {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0% 0% 22% 22%/0% 0% 20% 20%;
+  position: absolute;
+  height: 100%;
 }
 
 .divide-row {
@@ -212,17 +216,38 @@ span.small-circle-end {
     }
   }
 }
-
+.sentence-underline {
+  position: relative;
+  display: inline-block;
+  h4::before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.506);
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
+  section {
+    margin: 50px 0px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  section {
+    margin: 50px 0px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  section {
+    margin: 50px 0px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {

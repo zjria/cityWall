@@ -66,15 +66,21 @@
 /* Responsive: start 320px end: 1368px  */
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
+  .navbar-details .container {
+    padding-left: 12px;
+  }
   .navbar-details .container .brand-logo a {
-    padding: 5px 8px;
-    float: right;
+    padding: 0;
+    float: left;
     padding-right: 0px;
   }
+  .navbar-details .container .brand-logo a img {
+    width: 90px;
+  }
   .navbar-details .container .brand-logo {
-    padding-right: 15px;
-    height: 45px;
-    top: 8px;
+    padding: 10px;
+    height: auto;
+    position: static;
   }
   .navbar-details .container .nav-item .nav-link .dash-icons {
     display: block;
@@ -82,16 +88,106 @@
   .navbar-details .container .nav-item .nav-link .plus-icons {
     display: block;
   }
+  div#navbarSupportedContent {
+    margin-top: 20px;
+  }
+  .icons {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  .navbar-details .container .brand-logo {
+    position: static;
+    height: auto;
+    padding: 10px;
+  }
+  .navbar-details .container .brand-logo a {
+    display: flex;
+    padding: 0px;
+    float: left;
+    padding-right: 0px;
+  }
+  .navbar-details .container .brand-logo a img {
+    width: 90px;
+  }
+  .navbar-details .container {
+    padding-left: 0px;
+  }
+  div#navbarSupportedContent {
+    margin-top: 20px;
+  }
+  .navbar-details .cityWall-btn a {
+    margin: 0 auto;
+    padding: 10px 40px;
+  }
+  .icons {
+    display: none;
+  }
+  .navbar-details .container .nav-item .nav-link .plus-icons {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .navbar-details .container .brand-logo {
+    position: static;
+    height: auto;
+    padding: 10px;
+  }
+  .navbar-details .container .brand-logo a {
+    padding: 0;
+    float: left;
+    padding-right: 0;
+  }
+  .navbar-details .container {
+    padding-left: 0;
+  }
+  .navbar-details .container .brand-logo a img {
+    width: 120px;
+  }
+  div#navbarSupportedContent {
+    margin-top: 20px;
+  }
+  .navbar-details .container .nav-item .nav-link .plus-icons {
+    display: block;
+  }
+  .navbar-details .cityWall-btn a {
+    margin: 0 auto;
+    padding: 10px 50px;
+  }
+  .icons {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar-details .container {
+    padding-left: 0;
+  }
+  .navbar-details .container .brand-logo {
+    position: static;
+    left: 0;
+    padding-right: 0;
+    height: auto;
+    padding: 20px;
+  }
+  .navbar-details .container .brand-logo a {
+    padding: 0;
+    float: left;
+    padding-right: 0;
+  }
+  .icons {
+    display: none;
+  }
+  div#navbarSupportedContent {
+    justify-content: space-between;
+    margin-left: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
+  div#navbarSupportedContent {
+    justify-content: space-between;
+  }
 }

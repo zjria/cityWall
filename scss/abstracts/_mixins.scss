@@ -4,7 +4,7 @@
   position: absolute;
   width: 100px;
   height: 87px;
-  right: 0;
+  right: -1px;
   bottom: 0;
 }
 
@@ -30,12 +30,21 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  .navbar-details .container .brand-logo .brand-style {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .navbar-details .container .brand-logo .brand-style {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar-details .container .brand-logo .brand-style {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
