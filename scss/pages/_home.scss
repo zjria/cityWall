@@ -616,65 +616,70 @@
 }
 // =================Explore our beautiful city highlights photos===========================
 .city-highlights-photos {
-  background-color: $EigengrauColor;
-  padding-top: 100px;
-  padding-bottom: 0px;
-  max-height: 500px;
-  .container-fluid {
-    .Portfolio-header {
-      .visit-link {
-        a {
-          background-color: $secondaryColor;
-          padding: 20px 40px;
-          font-size: 18px;
-          font-weight: 500;
-          line-height: 24px;
-        }
+  position: relative;
+  &::before {
+    background-color: $blackColor;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 515px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .Portfolio-header {
+    padding-top: 100px;
+    .visit-link {
+      a {
+        background-color: $secondaryColor;
+        padding: 20px 40px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
       }
     }
-    .card {
-      overflow: hidden;
-      img {
-        transition: transform 2s;
-      }
-      &:hover img {
-        transform: scale(1.1);
-      }
-      .image-title {
-        background-color: $EigengrauColor;
+  }
+  .card {
+    overflow: hidden;
+    img {
+      transition: transform 2s;
+    }
+    &:hover img {
+      transform: scale(1.1);
+    }
+    .image-title {
+      background-color: $EigengrauColor;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 93%;
+      .button-background-color {
+        width: 14%;
+        height: 100%;
         position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 93%;
-        .button-background-color {
-          width: 14%;
-          height: 100%;
-          position: absolute;
-          right: 0;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          background-color: $secondaryColor;
-          clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+        right: 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: $secondaryColor;
+        clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
 
-          button {
-            outline: none;
-            border: none;
-            padding: 0px 4px;
-            border-radius: 50%;
-            i {
-              font-size: 16px;
-            }
+        button {
+          outline: none;
+          border: none;
+          padding: 0px 4px;
+          border-radius: 50%;
+          i {
+            font-size: 16px;
           }
         }
       }
     }
   }
 }
-
 // =================Latest From Our Newsroom=================
 .Newsroom {
-  margin-top: 250px;
+  // margin-top: 250px;
   .container {
     .card {
       box-shadow: 2px 2px 20px 2px #0000001a;
@@ -695,9 +700,11 @@
             clip-path: polygon(69% 0, 100% 32%, 70% 33%, 69% 100%, 0 100%, 0 0);
             display: inline-block;
             padding: 2px 40px 2px 20px;
-            margin-top: -35px;
+            margin-top: -32px;
             justify-content: start;
             text-align: start;
+            position: absolute;
+            left: 15px;
           }
           i {
             color: $secondaryColor;
@@ -794,6 +801,9 @@
     padding: 10px 40px;
     border-radius: 5px;
   }
+  .Portfolio-header.d-flex.align-items-center.justify-content-between.mb-4 {
+    padding-top: 50px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -831,6 +841,10 @@
   section.home_one.upcaming-city {
     text-align: center;
   }
+  .city-highlights-photos .container-fluid .Portfolio-header .visit-link a {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -863,6 +877,10 @@
   }
   .home_one article .footer-content {
     padding: 0;
+  }
+  .city-highlights-photos .container-fluid .Portfolio-header .visit-link a {
+    padding: 15px 30px;
+    font-size: 17px;
   }
 }
 
