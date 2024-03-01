@@ -103,15 +103,16 @@ footer {
         padding: 6px 12px;
         font-size: 18px;
         border-radius: 50%;
+        transition: 0.4s ease;
         i {
           animation: move 2s infinite;
           @keyframes move {
-            80% {
-              opacity: 0.5;
+            0% {
+              transform: translateY(1.5rem);
+              opacity: 0;
             }
             100% {
-              transform: translateY(5.3rem);
-              opacity: 0;
+              opacity: 1;
             }
           }
         }

@@ -1,7 +1,7 @@
 $(".testimonial-slider").slick({
   dots: true,
   infinite: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 1000,
   slickGoTo: 0,
   speed: 3000,
@@ -105,4 +105,16 @@ shareButtons.forEach(function (shareButton, index) {
   shareButton.addEventListener("click", function () {
     socialLinksList[index].classList.toggle("hideLink");
   });
+});
+
+// up to down button
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 2000) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
 });

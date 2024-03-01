@@ -1,6 +1,6 @@
 // ==================Banner section==================
 
-.home_one.banner {
+.home.banner {
   .images-optimization {
     img {
       width: 100%;
@@ -19,7 +19,7 @@
   }
 }
 // ==================Banner Card section==================
-.home_one.banner-card {
+.home.banner-card {
   font-family: $raleway-font;
   margin-top: -100px;
 
@@ -249,7 +249,7 @@
 }
 
 // =================Our Dedicated Investigators===========================
-.home_one.our-investigators {
+.home.our-investigators {
   .card-body {
     margin-top: -230px;
     ul {
@@ -287,7 +287,7 @@
 }
 
 // ==============Best City Government & Municipal Service Based On USA===================
-.home_one {
+.home {
   .best-city-government {
     .images-and-overlay {
       position: relative;
@@ -735,11 +735,11 @@
 /* Responsive: start 320px end: 1368px  */
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
-  .home_one.banner .images-optimization .cover-images-overlay {
+  .home.banner .images-optimization .cover-images-overlay {
     justify-content: center;
     text-align: center;
   }
-  .home_one.banner-card {
+  .home.banner-card {
     margin-top: 20px;
   }
   .about-company .images .img-tow {
@@ -768,17 +768,17 @@
   .government-service .card img {
     width: 15%;
   }
-  .home_one.our-investigators img {
+  .home.our-investigators img {
     width: 90%;
     margin: 0 auto;
   }
-  .home_one article {
+  .home article {
     margin-top: 50px;
   }
-  .home_one .best-city-government .images-and-overlay img {
+  .home .best-city-government .images-and-overlay img {
     min-height: 35vh;
   }
-  .home_one .best-city-government .best-ciy-service-information .city-content {
+  .home .best-city-government .best-ciy-service-information .city-content {
     margin-top: 25px;
   }
   .closeTwo {
@@ -786,10 +786,10 @@
     right: -7%;
     font-size: 30px;
   }
-  .home_one article .footer-content {
+  .home article .footer-content {
     padding: 0;
   }
-  section.home_one.upcaming-city {
+  section.home.upcaming-city {
     text-align: center;
   }
   .Portfolio-header {
@@ -807,11 +807,11 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  .home_one.banner .images-optimization .cover-images-overlay {
+  .home.banner .images-optimization .cover-images-overlay {
     justify-content: center;
     text-align: center;
   }
-  .home_one.banner-card {
+  .home.banner-card {
     margin-top: 20px;
   }
   .close {
@@ -829,16 +829,16 @@
   .government-service .card img {
     width: 18%;
   }
-  .home_one .best-city-government .best-ciy-service-information .city-content {
+  .home .best-city-government .best-ciy-service-information .city-content {
     margin-top: 25px;
   }
-  .home_one article {
+  .home article {
     margin-top: 50px;
   }
-  .home_one article .footer-content {
+  .home article .footer-content {
     padding: 0;
   }
-  section.home_one.upcaming-city {
+  section.home.upcaming-city {
     text-align: center;
   }
   .city-highlights-photos .container-fluid .Portfolio-header .visit-link a {
@@ -848,11 +848,11 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .home_one.banner .images-optimization .cover-images-overlay {
+  .home.banner .images-optimization .cover-images-overlay {
     justify-content: center;
     text-align: center;
   }
-  .home_one.banner-card {
+  .home.banner-card {
     margin-top: 20px;
   }
   .about-company .company-details {
@@ -869,13 +869,13 @@
   .government-service .card img {
     width: 20%;
   }
-  .home_one .best-city-government .best-ciy-service-information .city-content {
+  .home .best-city-government .best-ciy-service-information .city-content {
     margin-top: 25px;
   }
-  .home_one article {
+  .home article {
     margin-top: 50px;
   }
-  .home_one article .footer-content {
+  .home article .footer-content {
     padding: 0;
   }
   .city-highlights-photos .container-fluid .Portfolio-header .visit-link a {
@@ -896,10 +896,10 @@
   .about-company .images .img-one {
     height: auto;
   }
-  .home_one .best-city-government .best-ciy-service-information .city-content {
+  .home .best-city-government .best-ciy-service-information .city-content {
     margin-top: 25px;
   }
-  .home_one article {
+  .home article {
     margin-top: 50px;
   }
 }

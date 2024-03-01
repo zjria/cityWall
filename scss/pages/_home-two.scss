@@ -1,0 +1,106 @@
+.home-two.banner-card .card {
+  background-color: $EigengrauColor;
+  color: $whiteColor;
+}
+.home-two.banner-card .card .card-text {
+  color: rgba(255, 255, 255, 0.646);
+}
+
+.home-two.banner-card .card::before {
+  border-bottom: 5px solid $secondaryColor;
+}
+
+.home-two .government-service {
+  background-color: $bgThirdColor;
+}
+
+.home-two .government-service .card {
+  background-color: $cardThirdColor;
+  color: $GainsboroColor;
+}
+
+.home-two .government-service .card img {
+  background-color: $bgThirdColor;
+  transition: 0.5s ease-out;
+}
+.home-two .government-service .card:hover img {
+  background-color: $secondaryColor;
+}
+.home-two .government-service .card .card-footer {
+  background-color: $cardThirdColor !important;
+}
+
+.home-two article .footer-content {
+  background-color: $richBlack;
+  border-top: 1px solid $secondaryColor;
+}
+
+.home-two article .footer-content ul li a {
+  color: $GainsboroColor;
+}
+.home-two .upcaming-city {
+  background-color: $EigengrauFooterColor;
+}
+
+.home-two .upcaming-evevnts-card .card-title {
+  color: $GainsboroColor;
+}
+.home-two .upcaming-city .download-city {
+  background-color: $richBlack !important;
+}
+.home-two .upcaming-city .download-city h2 {
+  color: $GainsboroColor;
+}
+
+.home-two .upcaming-city .container .download-city .card {
+  background-color: $EigengrauFooterColor;
+}
+.home-two .download-city .card .eyes-download-icons i {
+  color: $secondaryColor !important;
+}
+.home-two .upcaming-city .container .download-city .card h6 {
+  color: $DavysGrayColor !important;
+}
+
+.home-two .our-testimonials .card {
+  background-color: $EigengrauColor;
+}
+.our-testimonials .card ul.d-flex.column-gap-3 {
+  margin: 10px 0px;
+}
+.home-two .our-testimonials .name-title h6 {
+  color: #b59a6d;
+}
+.home-two .our-testimonials .card .testi-single-box:hover .name-title h6 {
+  color: #000;
+}
+.home-two .city-highlights-photos {
+  background-color: $EigengrauColor;
+}
+.home-two .Newsroom .card,
+.home-two .Newsroom .card .card-footer {
+  background-color: $EigengrauFooterColor !important;
+}
+
+.home-two .to-top {
+  // background-color: $whiteColor !important;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  // color: $secondaryColor !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.home-two .to-top.active {
+  opacity: 1;
+  bottom: 2rem;
+  pointer-events: auto;
+}

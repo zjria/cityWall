@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-size: 16px;
   font-weight: 400;
@@ -228,6 +230,21 @@ span.small-circle-end {
     top: 0;
     bottom: 0;
   }
+}
+
+// =========== home two pages===========
+.home-two {
+  background-color: $richBlack;
+  color: $whiteColor;
+}
+.home-two .divide-row {
+  background-color: rgb(129 124 124 / 22%);
+}
+.home-two .our-testimonials p {
+  color: $testimonialParaColor;
+}
+.home-two .divide-row-tow {
+  background-color: rgb(102 98 98 / 26%);
 }
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */

@@ -1,4 +1,4 @@
-//buttons one
+//buttons Home Pages
 .cityWall-btn a {
   display: inline-block;
   overflow: hidden;
@@ -130,6 +130,7 @@
   border-radius: 50%;
   color: white;
   font-size: 30px;
+  z-index: 1;
 }
 #openBtn::before,
 #openBtn::after {
@@ -194,6 +195,111 @@
   }
 }
 
+// buttons home two pages
+.home-two .cityWall-btn a {
+  display: inline-block;
+  overflow: hidden;
+  background: $secondaryColor;
+  transition: all 0.5s ease 0s;
+  z-index: 1;
+  padding: 13px 30px 13px;
+  text-decoration: none;
+  position: relative;
+  border-radius: 0px;
+  font-size: 15px;
+  color: $whiteColor;
+  font-weight: 500;
+}
+.home-two .cityWall-btn a::before {
+  content: "";
+  background: $primaryColor;
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  transition: 0.5s;
+  z-index: -1;
+}
+.home-two .cityWall-btn a:hover::before {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+
+.home-two .cityWall-btn a::after {
+  content: "";
+  background: $primaryColor;
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.home-two .cityWall-btn a:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+// banner button home two page
+.home-two.banner .cityWall-btn a {
+  display: inline-block;
+  overflow: hidden;
+  background: #b59a6d;
+  transition: all 0.5s ease 0s;
+  z-index: 1;
+  padding: 13px 30px 13px;
+  text-decoration: none;
+  position: relative;
+  border-radius: 0px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.home-two.banner .cityWall-btn a::before {
+  content: "";
+  background: $bannerButtonColor;
+  height: 50%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.home-two.banner .cityWall-btn a:hover::before {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+
+.home-two.banner .cityWall-btn a::after {
+  content: "";
+  background: $bannerButtonColor;
+  height: 50%;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.home-two.banner .cityWall-btn a:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
 
@@ -204,7 +310,7 @@
       padding: 8px 30px;
     }
   }
-  .home_one.banner {
+  .home.banner {
     .buttons {
       flex-direction: column;
       text-align: center;
@@ -222,7 +328,7 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  .home_one.banner {
+  .home.banner {
     .cityWall-btn-two a {
       padding: 10px 20px;
     }
