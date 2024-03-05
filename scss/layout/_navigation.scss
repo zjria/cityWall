@@ -62,6 +62,30 @@
   }
 }
 
+// Home page three navigation
+.home-three .navbar-details .container .brand-logo a img {
+  width: 110px;
+}
+.home-three .navbar-details .container .brand-logo a {
+  display: flex;
+  padding: 57px 20px;
+  float: right;
+  padding-right: 40px;
+}
+.home-three .navbar-details .container .brand-logo {
+  padding-right: 0px;
+  position: absolute;
+}
+.home-three-brand-style {
+  background-color: #b59a6d;
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 25%;
+  right: -14%;
+  bottom: 30%;
+  border-radius: 28% 21% 100% 0%;
+}
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
 
@@ -93,6 +117,16 @@
   }
   .icons {
     display: none;
+  }
+  .home-three-brand-style {
+    display: none;
+  }
+  .home-three .navbar-details .container .brand-logo a {
+    padding: 2px 5px;
+  }
+  .home-three .navbar-details .container .brand-logo {
+    padding-right: 0px;
+    position: static;
   }
 }
 
@@ -127,6 +161,12 @@
   .navbar-details .container .nav-item .nav-link .plus-icons {
     display: block;
   }
+  .home-three .navbar-details .container .brand-logo a {
+    padding: 10px;
+  }
+  .home-three .navbar-details .container .brand-logo {
+    position: static;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -159,6 +199,15 @@
   .icons {
     display: none;
   }
+  .home-three .navbar-details .container .brand-logo {
+    position: static;
+  }
+  .home-three-brand-style {
+    display: none;
+  }
+  .home-three .navbar-details .container .brand-logo a {
+    padding: 0px 10px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -183,6 +232,15 @@
   div#navbarSupportedContent {
     justify-content: space-between;
     margin-left: 15px;
+  }
+  .home-three .navbar-details .container .brand-logo {
+    position: static;
+  }
+  .home-three .navbar-details .container .brand-logo a {
+    padding: 0px 10px;
+  }
+  .home-three-brand-style {
+    display: none;
   }
 }
 
