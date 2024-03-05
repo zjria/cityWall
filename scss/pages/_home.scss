@@ -48,7 +48,7 @@
       }
     }
   }
-  .card::before {
+  .card::after {
     content: "";
     position: absolute;
     display: block;
@@ -60,7 +60,7 @@
     transform: scaleX(0);
     transition: transform 0.9s ease;
   }
-  .card:hover::before {
+  .card:hover::after {
     transform: scaleX(1);
   }
 }
