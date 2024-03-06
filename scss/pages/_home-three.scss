@@ -1,3 +1,4 @@
+// ==============Home three banner section==============
 .home-three.banner-card {
   font-family: "Raleway", sans-serif;
   margin-top: 0px;
@@ -61,6 +62,68 @@
       bottom: 0;
       transform: scaleX(0);
       transition: transform 0.9s ease;
+    }
+  }
+}
+
+// ===========home-three giment-city===========
+.home-three.giment-city {
+  .company-details {
+    margin: 0;
+    .company-list {
+      margin-bottom: 25px;
+    }
+    .city-development {
+      position: relative;
+      margin-bottom: 30px;
+      .progress {
+        .progress-bar {
+          width: 75%;
+          animation: progress-width;
+          animation-duration: 5s;
+        }
+        @keyframes progress-width {
+          0% {
+            width: 0%;
+          }
+          100% {
+            width: 75%;
+          }
+        }
+        .number {
+          position: absolute;
+          right: 30px;
+          bottom: 20px;
+          z-index: 99;
+          opacity: 99;
+          color: black;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+// =========Best City Government & Municipal Service Based On USA=========
+.home-three {
+  .download-city {
+    background-color: rebeccapurple;
+    .card {
+      flex: 1;
+      background-color: $homeThreeDownloadCardBgColor;
+      .eyes-download-icons {
+        i {
+          color: $secondaryColor;
+        }
+      }
+      h3 {
+        color: $secondaryColor;
+      }
+    }
+    .bg-secondary-custom {
+      background-color: $secondaryColor;
+      h2 {
+        color: $whiteColor;
+      }
     }
   }
 }
