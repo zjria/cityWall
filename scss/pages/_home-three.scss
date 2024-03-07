@@ -111,12 +111,46 @@
       flex: 1;
       background-color: $homeThreeDownloadCardBgColor;
       .eyes-download-icons {
-        i {
-          color: $secondaryColor;
+        span {
+          position: relative;
+          i {
+            color: $secondaryColor;
+          }
+          .eye-one {
+            transition: all 0.5s ease;
+          }
+          .eye-two {
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: all 0.5s ease;
+          }
+        }
+        .download-icons {
+          cursor: pointer;
+          background: white;
+          width: 40px;
+          height: 40px;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          display: flex;
+          border-radius: 50%;
+          border: 1px solid rgba(139, 69, 19, 0);
+          transition: all 0.5s ease;
         }
       }
       h3 {
         color: $secondaryColor;
+      }
+      &:hover .eyes-download-icons span .eye-two {
+        opacity: 1;
+      }
+      &:hover .eyes-download-icons span .eye-one {
+        opacity: 0;
+      }
+      &:hover .eyes-download-icons .download-icons {
+        border-color: saddlebrown;
       }
     }
     .bg-secondary-custom {
@@ -126,4 +160,99 @@
       }
     }
   }
+}
+
+.home-three.services-programs-initiatives {
+  .section-title {
+    margin-bottom: 150px;
+  }
+  .card {
+    position: relative;
+    .card-body {
+      background-color: $whiteColor;
+      transition: all 0.5s ease;
+      margin: 0px 20px;
+      position: absolute;
+      top: -90px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      .body-img {
+        display: flex;
+        justify-content: end;
+        .top-images {
+          background-color: $whiteColor;
+          border-radius: 50%;
+          box-shadow: 3px 1px 5px 0px;
+          padding: 15px;
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          img {
+          }
+        }
+      }
+      .card-footer {
+        a {
+          color: $secondaryColor;
+          text-decoration: underline;
+        }
+      }
+    }
+    &:hover .card-body {
+      background-color: $secondaryColor;
+      color: $whiteColor;
+      .card-text {
+        color: $whiteColor;
+      }
+      .card-footer {
+        a {
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+  p {
+    font-family: $josefin-font;
+    a {
+      color: $secondaryColor;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* ==============Responsive classes============== */
+/* Responsive: start 320px end: 1368px  */
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .home-three.giment-city .company-details .city-development h3 {
+    margin-bottom: 40px;
+  }
+  .home-three.services-programs-initiatives .card {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .home-three.giment-city .company-details .city-development h3 {
+    margin-bottom: 30px;
+  }
+  .home-three.services-programs-initiatives .card {
+    margin-bottom: 100px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .home-three .download-city .card h3 {
+    line-height: 35px;
+  }
+  .home-three.services-programs-initiatives .card .card-body {
+    margin: 0px 0px;
+    position: static;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
 }
