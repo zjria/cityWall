@@ -221,12 +221,32 @@
 // ==========Our Department==========
 .department {
   position: relative;
+  .bg-images {
+    width: 55%;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: $secondaryColor;
+      top: 10px;
+      left: 20px;
+      right: 0;
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+      z-index: -1;
+    }
+  }
   .department-content {
     background-color: $secondaryColor;
     padding: 50px;
     margin-left: 250px;
     position: absolute;
     bottom: 0;
+    z-index: 11;
+
     .div-title {
       .semi-title {
         color: $whiteColor;
@@ -235,6 +255,9 @@
         h1,
         p {
           color: $whiteColor;
+        }
+        h1 {
+          font-size: 40px;
         }
       }
       .cityWall-btn-two {
@@ -268,6 +291,12 @@
     }
   }
 }
+// ================Beautiful Portfolio=================
+.beautiful-Portfolio {
+  .beautiful-images {
+    display: grid;
+  }
+}
 
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
@@ -290,6 +319,9 @@
     text-align: center;
     margin: 0 auto;
   }
+  .department .bg-images {
+    width: 100%;
+  }
   section.department img {
     min-height: 1200px;
   }
@@ -306,6 +338,9 @@
   .department .department-content {
     margin-left: 100px;
   }
+  .department .bg-images {
+    width: 100%;
+  }
   section.department img {
     min-height: 1200px;
   }
@@ -319,6 +354,9 @@
     margin: 0px 0px;
     position: static;
   }
+  .department .bg-images {
+    width: 100%;
+  }
   section.department img {
     min-height: 1000px;
   }
@@ -327,6 +365,9 @@
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   section.department img {
     min-height: 800px;
+  }
+  .department .bg-images::after {
+    top: 90px;
   }
 }
 
