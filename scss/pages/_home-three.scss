@@ -218,6 +218,56 @@
     }
   }
 }
+// ==========Our Department==========
+.department {
+  position: relative;
+  .department-content {
+    background-color: $secondaryColor;
+    padding: 50px;
+    margin-left: 250px;
+    position: absolute;
+    bottom: 0;
+    .div-title {
+      .semi-title {
+        color: $whiteColor;
+      }
+      .section-title {
+        h1,
+        p {
+          color: $whiteColor;
+        }
+      }
+      .cityWall-btn-two {
+        a {
+          background: $buttonBgColor;
+        }
+      }
+    }
+    ul {
+      row-gap: 20px;
+      display: flex;
+      flex-direction: column;
+      li {
+        a,
+        span,
+        i {
+          color: $whiteColor;
+          transition: all 0.5s ease;
+        }
+        .divide-row {
+          background-color: $whiteColor;
+          transition: all 0.5s ease;
+        }
+        &:hover .divide-row {
+          background-color: $primaryColor;
+        }
+        &:hover i {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
 
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
@@ -229,6 +279,20 @@
   .home-three.services-programs-initiatives .card {
     margin-bottom: 100px;
   }
+  .department .department-content {
+    padding: 20px;
+    margin-left: 0px;
+    bottom: 0;
+    width: 90%;
+    margin-right: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  section.department img {
+    min-height: 1200px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -238,6 +302,12 @@
   .home-three.services-programs-initiatives .card {
     margin-bottom: 100px;
     align-items: center;
+  }
+  .department .department-content {
+    margin-left: 100px;
+  }
+  section.department img {
+    min-height: 1200px;
   }
 }
 
@@ -249,9 +319,15 @@
     margin: 0px 0px;
     position: static;
   }
+  section.department img {
+    min-height: 1000px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  section.department img {
+    min-height: 800px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
