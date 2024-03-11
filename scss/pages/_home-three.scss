@@ -166,6 +166,9 @@
   .section-title {
     margin-bottom: 150px;
   }
+  .initiatives-all-card {
+    margin-bottom: 50px;
+  }
   .card {
     position: relative;
     .card-body {
@@ -221,31 +224,31 @@
 // ==========Our Department==========
 .department {
   position: relative;
+  .container-fluid {
+    padding: 0px;
+  }
   .bg-images {
-    width: 55%;
-    &::after {
-      content: "";
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background-color: $secondaryColor;
-      top: 10px;
-      left: 20px;
-      right: 0;
-      justify-content: center;
-      text-align: center;
-      margin: 0 auto;
-      z-index: -1;
+    img {
+      width: 55%;
     }
   }
   .department-content {
     background-color: $secondaryColor;
-    padding: 50px;
-    margin-left: 250px;
+    padding: 40px;
     position: absolute;
     bottom: 0;
-    z-index: 11;
+    margin-left: 220px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #b59a6d;
+      top: -55px;
+      left: 420px;
+      z-index: -1;
+    }
 
     .div-title {
       .semi-title {
@@ -291,6 +294,7 @@
     }
   }
 }
+
 // ================Beautiful Portfolio=================
 .beautiful-Portfolio {
   .beautiful-images {
@@ -344,6 +348,47 @@
     }
   }
 }
+// ============Upcoming City Activities & Events Schedule============
+.home-three.upcaming-city {
+  .upcaming-evevnts-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+// =================Latest From Our Newsroom=================
+
+.home-three {
+  .home-three-date {
+    background-color: $whiteColor;
+    margin-top: -32px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    clip-path: none;
+    left: auto;
+    padding: 0;
+    color: $secondaryColor;
+    box-shadow: $secondaryColor 0px 3px 1px 1px;
+  }
+  h3.home-three {
+    font-family: "Jost", sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+    color: $primaryColor;
+    margin: 10px 0px;
+  }
+}
+
+.hide {
+  display: none;
+}
 
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
@@ -366,7 +411,7 @@
     text-align: center;
     margin: 0 auto;
   }
-  .department .bg-images {
+  .department .bg-images img {
     width: 100%;
   }
   section.department img {
@@ -378,6 +423,18 @@
   .beautiful-Portfolio .beautiful-images .second-column,
   .beautiful-Portfolio .beautiful-images .three-column {
     row-gap: 10px;
+  }
+  .department .department-content .div-title .section-title h1 {
+    font-size: 20px;
+  }
+  .home-three.upcaming-city .upcaming-evevnts-card {
+    grid-template-columns: 1fr;
+  }
+  .home-three.services-programs-initiatives .initiatives-all-card {
+    margin-bottom: -50px;
+  }
+  .department .department-content::before {
+    display: none;
   }
 }
 
@@ -392,7 +449,7 @@
   .department .department-content {
     margin-left: 100px;
   }
-  .department .bg-images {
+  .department .bg-images img {
     width: 100%;
   }
   section.department img {
@@ -405,6 +462,18 @@
   .beautiful-Portfolio .beautiful-images .three-column {
     row-gap: 10px;
   }
+  .department .department-content .div-title .section-title h1 {
+    font-size: 25px;
+  }
+  .home-three.services-programs-initiatives .initiatives-all-card {
+    margin-bottom: -50px;
+  }
+  .department .department-content::before {
+    display: none;
+  }
+  .home-three.upcaming-city .upcaming-evevnts-card {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -415,7 +484,7 @@
     margin: 0px 0px;
     position: static;
   }
-  .department .bg-images {
+  .department .bg-images img {
     width: 100%;
   }
   section.department img {
@@ -428,6 +497,18 @@
   .beautiful-Portfolio .beautiful-images .three-column {
     row-gap: 10px;
   }
+  .department .department-content .div-title .section-title h1 {
+    font-size: 30px;
+  }
+  .home-three.services-programs-initiatives .section-title {
+    margin-bottom: 60px;
+  }
+  .department .department-content::before {
+    display: none;
+  }
+  .home-three.upcaming-city .upcaming-evevnts-card {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -436,6 +517,13 @@
   }
   .department .bg-images::after {
     top: 90px;
+  }
+
+  .department .department-content::before {
+    display: none;
+  }
+  .home-three.upcaming-city .upcaming-evevnts-card {
+    grid-template-columns: 1fr;
   }
 }
 
