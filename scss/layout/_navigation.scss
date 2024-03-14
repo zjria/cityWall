@@ -26,10 +26,6 @@
           width: 130px;
         }
       }
-
-      .brand-style {
-        @include brand-style-css;
-      }
     }
 
     .nav-item {
@@ -85,6 +81,64 @@
   right: -14%;
   bottom: 30%;
   border-radius: 28% 21% 100% 0%;
+}
+// ==========home four==========
+.home-four {
+  .navbar-details {
+    background-color: transparent;
+    top: 10px;
+    .container {
+      background: white !important;
+      padding: 12px;
+      .brand-logo {
+        background-color: transparent;
+        position: static;
+        top: 0px;
+        left: 0;
+        padding-right: 0px;
+        height: auto;
+        a {
+          display: block;
+          padding: 0px;
+          float: right;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+.search-container form {
+  background-color: $secondaryColor;
+  display: flex;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 30px;
+  align-items: center;
+  position: relative;
+  max-width: 170px;
+}
+.search-container form input {
+  width: 0;
+  outline: 0;
+  border: 0;
+  transition: 0.8s;
+  background-color: transparent;
+}
+.search-container form.active input {
+  width: 100%;
+  padding: 0 5px;
+}
+.search-container form button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  transition: 0.8s;
+}
+form button:hover {
+  transform: scale(1.1);
+  color: $whiteColor;
+}
+.home-four .navbar-details.active {
 }
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */

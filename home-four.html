@@ -28,53 +28,11 @@
 
 <body>
     <!-- ==============header section============== -->
-    <header class="home">
-        <div class="top-header">
-            <div class="top-header-content">
-                <div class="container">
-                    <div class="contact-top-information d-flex">
-                        <div class="mobile-number-email d-flex">
-                            <a href="#">
-                                <i class="bi bi-telephone phone"></i>
-                                +199(980) 6915
-                            </a>
-                            <a href="#">
-                                <i class="bi bi-envelope email"></i>
-                                shifamoni@gmail.com
-                            </a>
-                        </div>
-                        <div class="language-socialLink d-flex ms-lg-auto">
-                            <div class="language">
-                                <label for="language">Language:</label>
-                                <select id="language">
-                                    <option value="english">English</option>
-                                    <option value="mandarin">Mandarin</option>
-                                    <option value="hindi">Hindi</option>
-                                    <option value="french">French</option>
-                                    <option value="modern">Modern</option>
-                                    <option value="bengali">Bengali</option>
-                                    <option value="Russian">Russian</option>
-                                </select>
-                            </div>
-                            <div class="socialLink d-flex">
-                                <p class="d-inline-block text-white">Follow on:</p>
-                                <ul class="d-flex">
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-vine"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-details">
+    <header class="home-four">
+        <nav class="navbar navbar-expand-lg navbar-details fixed-top">
             <div class="container">
                 <div class="brand-logo">
-                    <a class="navbar-brand m-0" href="#"><img src="images/01_home/header/logo.png" alt="logo"></a>
-                    <div class="brand-style"></div>
+                    <a class="navbar-brand m-0" href="#"><img src="images/04_home/nav-logo/logo.png" alt="logo"></a>
                 </div>
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -82,7 +40,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav gap-4">
+                    <ul class="navbar-nav gap-4 m-auto ">
                         <li class="nav-item dropdown">
                             <a class="nav-link fw-normal hover-style" href="index.html" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -179,12 +137,15 @@
                             <a class="nav-link fw-normal" href=""><span>Contact</span></a>
                         </li>
                     </ul>
-                    <div class="d-flex align-items-center gap-4 ms-auto m-md-0  cityWall-btn" role="search">
+                    <div class="d-flex align-items-center gap-4 ms-auto m-md-0 cityWall-btn" role="search">
+                        <div class="search-container">
+                            <form action="">
+                                <input id="headerSearchField" type="text" placeholder="Search.." name="search" required>
+                                <button><i class="fa fa-search search-icons"></i></button>
+                            </form>
+                        </div>
                         <a href="contact.html">Get A
                             Quote <i class="bi bi-arrow-right"></i></a>
-                        <div class="icons">
-                            <img src="images/01_home/header/icon.png" alt="">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -192,7 +153,7 @@
     </header>
 
     <!-- ==============Banner Section============== -->
-    <div class="home banner">
+    <div class="home-four banner">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -243,7 +204,7 @@
         </div>
     </div>
     <!-- banner card -->
-    <div class="home banner-card">
+    <div class="home-four banner-card">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 g-4">
                 <div class="col">
@@ -370,7 +331,7 @@
     </section>
 
     <!-- ==================Find Government Services Section================== -->
-    <section class="home government-service">
+    <section class="home-four government-service">
         <div class="container">
             <div class="semi-title text-center">
                 <h6><span class="small-circle-start"></span> Our City Government Services <span
@@ -495,7 +456,7 @@
     </section>
 
     <!-- =================Our Dedicated Investigators=========================== -->
-    <section class="home our-investigators ">
+    <section class="home-four our-investigators ">
         <div class="container">
             <div class="semi-title text-center">
                 <h6><span class="small-circle-start"></span>Check our Teammober<span class="small-circle-end"></span>
@@ -763,7 +724,7 @@
     </section>
 
     <!-- ======================Sponsor Company Logo========================== -->
-    <section class="home company-brand-logo">
+    <section class="home-four company-brand-logo">
         <div class="divide-row"></div>
         <div class="container">
             <div class="slider">
@@ -825,7 +786,7 @@
     </section>
 
     <!-- ============Upcoming City Activities & Events Schedule============ -->
-    <section class="home upcaming-city">
+    <section class="home-four upcaming-city">
         <div class="container py-5 ">
             <div class="row align-items-center flex-md-column flex-xl-row ">
                 <div class="col-sm-12 col-md-12 col-xl-7 ">
@@ -917,7 +878,7 @@
     </section>
 
     <!-- =================Good words From People=========================== -->
-    <section class="home our-testimonials">
+    <section class="home-four our-testimonials">
         <div class="container">
             <div class="semi-title text-center">
                 <h6><span class="small-circle-start"></span>Our testimonials<span class="small-circle-end"></span>
@@ -1195,7 +1156,7 @@
 
 
     <!-- =================Latest From Our Newsroom================= -->
-    <section class="home Newsroom">
+    <section class="home-four Newsroom">
         <div class="container  ">
             <div class="Newsroom-header mb-4">
                 <div class="semi-title">
