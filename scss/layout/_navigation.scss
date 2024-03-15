@@ -88,8 +88,8 @@
     background-color: transparent;
     top: 10px;
     .container {
-      background: white !important;
-      padding: 12px;
+      background-color: $whiteColor;
+      padding: 12px 24px 12px 12px;
       .brand-logo {
         background-color: transparent;
         position: static;
@@ -165,6 +165,9 @@ form button:hover {
   }
   .navbar-details .container .nav-item .nav-link .plus-icons {
     display: block;
+  }
+  .home-four .navbar-details .search-button {
+    flex-direction: column;
   }
   div#navbarSupportedContent {
     margin-top: 20px;
