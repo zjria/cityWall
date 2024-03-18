@@ -22,6 +22,13 @@ h1.home-three {
   line-height: 60px;
   font-weight: 700;
 }
+h1.about {
+  color: $raisinBlackColor;
+  font-family: $josefin-font;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
 
 h2 {
   color: $raisinBlackColor;
@@ -37,6 +44,13 @@ h2.home-three {
   line-height: 42px;
   font-weight: 600;
 }
+h2.about {
+  color: $raisinBlackColor;
+  font-family: $josefin-font;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 600;
+}
 
 h3 {
   font-family: $raleway-font;
@@ -46,6 +60,12 @@ h3 {
 }
 h3.home-three {
   font-family: $jost-font;
+  font-size: 24px;
+  line-height: 62px;
+  font-weight: 500;
+}
+h3.about {
+  font-family: $josefin-font;
   font-size: 24px;
   line-height: 62px;
   font-weight: 500;
@@ -69,9 +89,20 @@ h4.home-three {
   font-size: 22px;
   line-height: 30px;
 }
+h4.about {
+  font-family: $josefin-font;
+  font-size: 22px;
+  line-height: 30px;
+}
 
 h5 {
   font-family: $raleway-font;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 600;
+}
+h5.about {
+  font-family: $josefin-font;
   font-size: 20px;
   line-height: 34px;
   font-weight: 600;

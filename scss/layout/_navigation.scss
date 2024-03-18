@@ -6,8 +6,6 @@
   padding: 9.8px 0px;
 
   .container {
-    padding-left: 265px;
-
     .brand-logo {
       background-color: $secondaryColor;
       position: absolute;
@@ -140,6 +138,68 @@ form button:hover {
 }
 .home-four .navbar-details.active {
 }
+
+// =============About navbar================
+.about {
+  .navbar-details {
+    font-size: 16px;
+    background-color: $whiteColor;
+    font-family: $roboto-font;
+    font-weight: bold;
+    padding: 9.8px 0px;
+
+    .container {
+      .brand-logo {
+        background-color: $secondaryColor;
+        position: absolute;
+        top: -77px;
+        left: 0;
+        padding-right: 0px;
+        height: 164px;
+
+        a {
+          display: flex;
+          padding: 57px 20px;
+          float: right;
+          padding-right: 10px;
+
+          img {
+            width: 130px;
+          }
+        }
+      }
+
+      .nav-item {
+        .nav-link {
+          color: $blackColor;
+          padding: 0px;
+
+          span,
+          i {
+            border-bottom: 1px solid transparent;
+          }
+
+          &:hover span {
+            border-bottom: 1px solid $blackColor;
+            color: $secondaryColor;
+          }
+
+          &:hover i {
+            border-bottom: 1px solid $dangerColor;
+            color: $secondaryColor;
+          }
+          .dash-icons {
+            display: none;
+          }
+          .plus-icons {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
 
@@ -303,6 +363,6 @@ form button:hover {
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   div#navbarSupportedContent {
-    justify-content: space-between;
+    justify-content: end;
   }
 }
