@@ -1,285 +1,297 @@
-// ==================Banner section==================
+.about-us {
+  // ==================Banner section==================
 
-.about.banner {
-  .images-optimization {
-    img {
-      width: 100%;
-      min-height: 50vh;
+  .banner {
+    .images-optimization {
+      img {
+        width: 100%;
+        min-height: 50vh;
+      }
+      .banner-content {
+        align-items: center;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
     }
-    .banner-content {
-      align-items: center;
-      display: flex;
-      position: absolute;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      top: 0;
-      left: 0;
-      right: 0;
+    .home-about-link {
       bottom: 0;
-    }
-  }
-  .home-about-link {
-    bottom: 0;
-    position: absolute;
-    ul {
-      display: flex;
-      background-color: $secondaryColor;
-      width: fit-content;
-      padding: 20px 30px;
-      li {
-        transition: all 0.5s ease;
-        position: relative;
-        &::before {
-          border-bottom: 2px solid $primaryColor;
-          content: "";
-          position: absolute;
-          width: 5%;
-          bottom: 0px;
+      position: absolute;
+      ul {
+        display: flex;
+        background-color: $secondaryColor;
+        width: fit-content;
+        padding: 20px 30px;
+        li {
           transition: all 0.5s ease;
-        }
-        &:hover::before {
-          width: 100%;
+          position: relative;
+          &::before {
+            border-bottom: 2px solid $primaryColor;
+            content: "";
+            position: absolute;
+            width: 5%;
+            bottom: 0px;
+            transition: all 0.5s ease;
+          }
+          &:hover::before {
+            width: 100%;
+          }
         }
       }
     }
   }
-}
 
-// ==================Our Department section==================
-.department {
-  .department-details {
-  }
-  .semi-title {
-    h1 {
-      font-family: $josefin-font;
+  // ==================Our Department section==================
+  .our-department {
+    .department-details {
     }
-  }
-  .row-one {
-    position: relative;
-    img {
+    .semi-title {
+      h1 {
+        font-family: $josefin-font;
+      }
     }
-    .company-videos {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      background-color: $whiteColor;
-      padding: 40px 60px;
-      border: 1px dashed $secondaryColor;
-      z-index: 10;
-
-      &::before {
-        border-top: 10px solid $secondaryColor;
-        content: "";
-        border-top: 10px solid #b59a6d;
-        width: 182px;
+    .row-one {
+      position: relative;
+      img {
+      }
+      .company-videos {
         position: absolute;
-        top: -11px;
-        left: -11px;
+        right: 0;
+        bottom: 0;
+        background-color: $whiteColor;
+        padding: 40px 60px;
+        border: 1px dashed $secondaryColor;
+        z-index: 10;
+
+        &::before {
+          border-top: 10px solid $secondaryColor;
+          content: "";
+          border-top: 10px solid #b59a6d;
+          width: 182px;
+          position: absolute;
+          top: -11px;
+          left: -11px;
+        }
+        &::after {
+          content: "";
+          border-left: 10px solid $secondaryColor;
+          height: 50%;
+          position: absolute;
+          top: -11px;
+          left: -11px;
+          z-index: 9;
+        }
+      }
+    }
+    .row-two {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  .department-information {
+    margin-top: 40px;
+    .lifestyle-colors {
+      position: relative;
+      border-right: 1px solid $secondaryColor;
+      right: 0;
+      width: 80%;
+      .lifestyle {
+        h3 {
+          color: $secondaryColor;
+        }
+        h3,
+        p {
+          line-height: normal;
+          margin: 10px 0px;
+        }
+        margin-bottom: 35px;
+      }
+      .colors {
+        h3 {
+          color: $secondaryColor;
+        }
+        h3,
+        p {
+          line-height: normal;
+          margin: 10px 0px;
+        }
+        margin-bottom: 35px;
       }
       &::after {
+        background-color: $secondaryColor;
         content: "";
-        border-left: 10px solid $secondaryColor;
-        height: 50%;
         position: absolute;
-        top: -11px;
-        left: -11px;
-        z-index: 9;
+        width: 14px;
+        height: 14px;
+        right: -7px;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50%;
+        animation: mymove 5s infinite alternate;
+      }
+      @keyframes mymove {
+        0% {
+          top: 0;
+          bottom: 100%;
+        }
+        100% {
+          top: 100%;
+          bottom: 0;
+        }
       }
     }
   }
-  .row-two {
-    display: flex;
-    gap: 10px;
+
+  /* Video Popup Styles */
+
+  .video-popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
   }
-}
-.department-information {
-  margin-top: 40px;
-  .lifestyle-colors {
+
+  .video-popup-content {
     position: relative;
-    border-right: 1px solid $secondaryColor;
-    right: 0;
+    margin: 10% auto;
+    padding: 20px;
     width: 80%;
-    .lifestyle {
-      h3 {
-        color: $secondaryColor;
-      }
-      h3,
-      p {
-        line-height: normal;
-        margin: 10px 0px;
-      }
-      margin-bottom: 35px;
-    }
-    .colors {
-      h3 {
-        color: $secondaryColor;
-      }
-      h3,
-      p {
-        line-height: normal;
-        margin: 10px 0px;
-      }
-      margin-bottom: 35px;
-    }
-    &::after {
-      background-color: $secondaryColor;
-      content: "";
-      position: absolute;
-      width: 14px;
-      height: 14px;
-      right: -7px;
-      top: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      border-radius: 50%;
-    }
+    max-width: 700px;
+    border-radius: 8px;
   }
-}
 
-/* Video Popup Styles */
+  .close {
+    color: #aaa;
+    float: right;
+    font-weight: bold;
+    top: -15%;
+    right: 0%;
+    font-size: 50px;
+    position: absolute;
+  }
+  .closeTwo {
+    color: #aaa;
+    float: right;
+    font-weight: bold;
+    top: -15%;
+    right: -20%;
+    font-size: 50px;
+    position: absolute;
+  }
 
-.video-popup {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-}
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btn-text span {
+    font-family: $raleway-font;
+    font-size: 18px;
+    line-height: 30px;
+  }
 
-.video-popup-content {
-  position: relative;
-  margin: 10% auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 700px;
-  border-radius: 8px;
-}
+  // ==================Find Government Services Section=================
+  .government-service {
+    background-color: $WhiteSmokeColor;
+    padding: 100px 0px;
 
-.close {
-  color: #aaa;
-  float: right;
-  font-weight: bold;
-  top: -15%;
-  right: 0%;
-  font-size: 50px;
-  position: absolute;
-}
-.closeTwo {
-  color: #aaa;
-  float: right;
-  font-weight: bold;
-  top: -15%;
-  right: -20%;
-  font-size: 50px;
-  position: absolute;
-}
-
-.close:hover,
-.close:focus {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  cursor: pointer;
-}
-.btn-text span {
-  font-family: $raleway-font;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-// ==================Find Government Services Section=================
-.government-service {
-  background-color: $WhiteSmokeColor;
-  padding: 100px 0px;
-
-  .card {
-    padding: 40px 10px 40px 40px;
-    border-radius: 0;
-    border: none;
-    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 9%);
-
-    img {
-      background-color: $secondaryColor;
-      width: 25%;
-      padding: 10px;
+    .card {
+      padding: 40px 10px 40px 40px;
       border-radius: 0;
-    }
+      border: none;
+      box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 9%);
 
-    .card-body {
-      margin-top: 25px;
-      padding: 0;
-
-      .card-title {
-        font-weight: 600;
+      img {
+        background-color: $secondaryColor;
+        width: 25%;
+        padding: 10px;
+        border-radius: 0;
       }
-    }
 
-    .card-footer {
-      margin-top: 20px;
-      .card-btn {
-        overflow: hidden !important;
-        display: inline-block;
-        i {
-          transition: 2s;
-        }
-        &:hover i {
-          font-size: 20px;
+      .card-body {
+        margin-top: 25px;
+        padding: 0;
+
+        .card-title {
+          font-weight: 600;
         }
       }
-    }
 
-    &:hover .card-btn {
-      border: 1px dashed $secondaryColor;
+      .card-footer {
+        margin-top: 20px;
+        .card-btn {
+          overflow: hidden !important;
+          display: inline-block;
+          i {
+            transition: 2s;
+          }
+          &:hover i {
+            font-size: 20px;
+          }
+        }
+      }
+
+      &:hover .card-btn {
+        border: 1px dashed $secondaryColor;
+      }
     }
   }
-}
 
-// =================Our Dedicated Investigators===========================
-.home.our-investigators {
-  .card-body {
-    margin-top: -230px;
-    ul {
-      li {
-        background-color: $whiteColor;
+  // =================Our Dedicated Investigators===========================
+  .our-investigators {
+    .card-body {
+      margin-top: -230px;
+      ul {
+        li {
+          background-color: $whiteColor;
+          width: 30px;
+          height: 30px;
+          margin-bottom: 10px;
+          text-align: center;
+          transition: background-color 0.3s ease;
+        }
+      }
+
+      .share-btn {
+        background-color: $secondaryColor;
+        color: $whiteColor;
         width: 30px;
         height: 30px;
-        margin-bottom: 10px;
-        text-align: center;
+      }
+
+      .info {
+        background-color: $blackColor;
+        color: $whiteColor;
         transition: background-color 0.3s ease;
       }
-    }
 
-    .share-btn {
-      background-color: $secondaryColor;
-      color: $whiteColor;
-      width: 30px;
-      height: 30px;
-    }
-
-    .info {
-      background-color: $blackColor;
-      color: $whiteColor;
-      transition: background-color 0.3s ease;
-    }
-
-    &:hover .info {
-      background-color: $secondaryColor;
+      &:hover .info {
+        background-color: $secondaryColor;
+      }
     }
   }
-}
 
-.hideLink {
-  visibility: hidden;
-}
+  .hideLink {
+    visibility: hidden;
+  }
 
-// ==============Best City Government & Municipal Service Based On USA===================
-.about {
+  // ==============Best City Government & Municipal Service Based On USA===================
+
   .best-city-government {
     .images-and-overlay {
       position: relative;
@@ -309,412 +321,419 @@
         }
       }
     }
-  }
 
-  article {
-    margin-top: -175px;
-    position: relative;
-    left: 0;
-    right: 0;
-    .footer-content {
-      background-color: $whiteColor;
-      padding: 90px 60px;
+    article {
+      margin-top: -175px;
+      position: relative;
+      left: 0;
+      right: 0;
+      .footer-content {
+        background-color: $whiteColor;
+        padding: 90px 60px;
 
-      ul {
-        li {
-          margin: 20px 0;
-
-          .divide-row {
+        ul {
+          li {
             margin: 20px 0;
-            transition: all 1s ease-out;
-          }
 
-          a {
-            color: $raisinBlackColor;
-            font-family: $jost-font;
-            font-weight: 500;
-            font-size: 20px;
-            list-style: 24px;
-            transition: all 1s ease-out;
-
-            i {
-              display: none;
+            .divide-row {
+              margin: 20px 0;
               transition: all 1s ease-out;
             }
-          }
 
-          &:hover .divide-row {
-            background-color: $secondaryColor;
-          }
+            a {
+              color: $raisinBlackColor;
+              font-family: $jost-font;
+              font-weight: 500;
+              font-size: 20px;
+              list-style: 24px;
+              transition: all 1s ease-out;
 
-          &:hover a {
-            color: $secondaryColor;
-          }
+              i {
+                display: none;
+                transition: all 1s ease-out;
+              }
+            }
 
-          &:hover a i {
-            display: block;
+            &:hover .divide-row {
+              background-color: $secondaryColor;
+            }
+
+            &:hover a {
+              color: $secondaryColor;
+            }
+
+            &:hover a i {
+              display: block;
+            }
           }
         }
       }
     }
   }
-}
 
-/* Video Popup Styles */
+  /* Video Popup Styles */
 
-.video-popup-two {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.video-popup-two-content {
-  position: relative;
-  margin: 10% auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 800px;
-  border-radius: 8px;
-}
-
-.closeTwo {
-  color: #aaa;
-  float: right;
-  font-weight: bold;
-  top: -15%;
-  right: 0%;
-  font-size: 50px;
-  position: absolute;
-}
-
-.closeTwo:hover,
-.closeTwo:focus {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  cursor: pointer;
-}
-.btn-text span {
-  font-family: $raleway-font;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-// ============================Sponsor Company Logo============================
-.company-brand-logo {
-  .divide-row {
-    margin-bottom: 80px;
-    height: 0.5px;
+  .video-popup-two {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 7));
-    }
-  }
-  .slider {
-    height: 100px;
-    margin: auto;
-    overflow: hidden;
+  .video-popup-two-content {
     position: relative;
-    width: auto;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
   }
-  .slider .slide-track {
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
-  }
-  .slider .slide {
-    height: 100px;
-    width: 250px;
-  }
-}
 
-// ============================Up cumming city============================
-.upcaming-city {
-  background-color: $whiteSmokeColorTow;
-  .container {
-    .upcaming-evevnts-card {
-      .card {
-        .card-body {
-          justify-content: space-between;
-          a {
-            font-size: 20px;
-            color: $whiteColor;
-            cursor: pointer;
-            .card-footer {
-              background-color: $secondaryColor;
-              border-radius: 2px;
-              position: relative;
-              width: 40px;
-              height: 40px;
-              align-items: center;
-              display: flex;
-              justify-content: center;
-              &::before {
-                position: absolute;
-                content: "";
-                top: 5px;
-                left: 5px;
+  .closeTwo {
+    color: #aaa;
+    float: right;
+    font-weight: bold;
+    top: -15%;
+    right: 0%;
+    font-size: 50px;
+    position: absolute;
+  }
+
+  .closeTwo:hover,
+  .closeTwo:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btn-text span {
+    font-family: $raleway-font;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  // ============================Sponsor Company Logo============================
+  .company-brand-logo {
+    .divide-row {
+      margin-bottom: 80px;
+      height: 0.5px;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-250px * 7));
+      }
+    }
+    .slider {
+      height: 100px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: auto;
+    }
+    .slider .slide-track {
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(250px * 14);
+    }
+    .slider .slide {
+      height: 100px;
+      width: 250px;
+    }
+  }
+
+  // ============================Up cumming city============================
+  .upcaming-city {
+    background-color: $whiteSmokeColorTow;
+    .container {
+      .upcaming-evevnts-card {
+        .card {
+          .card-body {
+            justify-content: space-between;
+            a {
+              font-size: 20px;
+              color: $whiteColor;
+              cursor: pointer;
+              .card-footer {
+                background-color: $secondaryColor;
                 border-radius: 2px;
+                position: relative;
                 width: 40px;
                 height: 40px;
-                margin: 0;
-                padding: 0;
-                border: 1px dotted $secondaryColor;
-              }
-              &:hover::before {
-                animation: animName 5s linear infinite;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                &::before {
+                  position: absolute;
+                  content: "";
+                  top: 5px;
+                  left: 5px;
+                  border-radius: 2px;
+                  width: 40px;
+                  height: 40px;
+                  margin: 0;
+                  padding: 0;
+                  border: 1px dotted $secondaryColor;
+                }
+                &:hover::before {
+                  animation: animName 5s linear infinite;
 
-                @keyframes animName {
-                  0% {
-                    transform: rotate(0deg);
+                  @keyframes animName {
+                    0% {
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      transform: rotate(360deg);
+                    }
                   }
-                  100% {
-                    transform: rotate(360deg);
+                }
+              }
+            }
+            .info {
+              ul {
+                li {
+                  color: $DavysGrayColor;
+                  font-family: $jost-font;
+                  font-size: 15px;
+                  line-height: 34px;
+                  i {
+                    color: $secondaryColor;
                   }
                 }
               }
             }
           }
-          .info {
-            ul {
-              li {
-                color: $DavysGrayColor;
-                font-family: $jost-font;
-                font-size: 15px;
-                line-height: 34px;
-                i {
-                  color: $secondaryColor;
-                }
-              }
-            }
+          &:hover .card-body a .card-footer {
+            background-color: transparent;
           }
-        }
-        &:hover .card-body a .card-footer {
-          background-color: transparent;
-        }
-        &:hover .card-body a .card-footer i {
-          color: $secondaryColor;
-        }
-      }
-    }
-    .download-city {
-      h2 {
-        margin-bottom: 40px;
-      }
-      .card {
-        background-color: $secondaryColor;
-        .eyes-download-icons {
-          span {
-            i {
-              font-size: 20px;
-            }
-          }
-          .download-icons {
-            background-color: $whiteColor;
-            padding: 7px 12px;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.8);
-            i {
-              color: $secondaryColor;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// =================Good words From People===========================
-.our-testimonials {
-  .container {
-    .testimonial-slider {
-      .slick-dots li button:before {
-        font-size: 40px;
-      }
-      .card {
-        .testi-single-box {
-          position: relative;
-          border-radius: 2px;
-          box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.07);
-          margin: 0 0px;
-          z-index: 1;
-          transition: 0.9s all;
-          &:after {
-            position: absolute;
-            content: "";
-            height: 100%;
-            width: 100%;
-            background: $secondaryColor;
-            top: 0;
-            left: 0;
-            border-radius: 2px;
-            z-index: -1;
-            transition: 0.5s;
-            transform: scale(0.2, 1);
-            opacity: 0;
-          }
-          &:hover:after {
-            transform: scale(1);
-            opacity: 1;
-          }
-          > i {
-            font-size: 40px;
-            color: rgb(73, 84, 94);
-          }
-          ul {
-            li {
-              color: $secondaryColor;
-            }
-          }
-          &:hover ul li {
-            color: goldenrod;
-          }
-          .name-title {
-            h3 {
-              color: $secondaryColor;
-            }
-          }
-          &:hover .name-title h3 {
-            color: $blackColor;
-          }
-        }
-        .small-box-border {
-          position: absolute;
-          content: "";
-          top: 10px;
-          left: 10px;
-          border-radius: 2px;
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          padding: 0;
-          border: 1px dotted $secondaryColor;
-          z-index: -1;
-        }
-      }
-    }
-  }
-}
-// =================Explore our beautiful city highlights photos===========================
-.city-highlights-photos {
-  position: relative;
-  &::before {
-    background-color: $blackColor;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 515px;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  .Portfolio-header {
-    padding-top: 100px;
-    .visit-link {
-      a {
-        background-color: $secondaryColor;
-        padding: 20px 40px;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 24px;
-      }
-    }
-  }
-  .card {
-    overflow: hidden;
-    img {
-      transition: transform 2s;
-    }
-    &:hover img {
-      transform: scale(1.1);
-    }
-    .image-title {
-      background-color: $EigengrauColor;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 93%;
-      .button-background-color {
-        width: 14%;
-        height: 100%;
-        position: absolute;
-        right: 0;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        background-color: $secondaryColor;
-        clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
-
-        button {
-          outline: none;
-          border: none;
-          padding: 0px 4px;
-          border-radius: 50%;
-          i {
-            font-size: 16px;
-          }
-        }
-      }
-    }
-  }
-}
-// =================Latest From Our Newsroom=================
-.Newsroom {
-  // margin-top: 250px;
-  .container {
-    .card {
-      box-shadow: 2px 2px 20px 2px #0000001a;
-      .card-body {
-        .date-comment {
-          color: $QuickSilver;
-          font-family: $jost-font;
-          .date {
-            background-color: $secondaryColor;
-            -webkit-clip-path: polygon(
-              71% 0,
-              100% 19%,
-              70% 21%,
-              69% 100%,
-              0 100%,
-              0 0
-            );
-            clip-path: polygon(69% 0, 100% 32%, 70% 33%, 69% 100%, 0 100%, 0 0);
-            display: inline-block;
-            padding: 2px 40px 2px 20px;
-            margin-top: -32px;
-            justify-content: start;
-            text-align: start;
-            position: absolute;
-            left: 15px;
-          }
-          i {
+          &:hover .card-body a .card-footer i {
             color: $secondaryColor;
           }
         }
-        .card-title {
-          color: $secondaryColor;
-          margin-top: 30px;
+      }
+      .download-city {
+        h2 {
+          margin-bottom: 40px;
+        }
+        .card {
+          background-color: $secondaryColor;
+          .eyes-download-icons {
+            span {
+              i {
+                font-size: 20px;
+              }
+            }
+            .download-icons {
+              background-color: $whiteColor;
+              padding: 7px 12px;
+              border-radius: 50%;
+              cursor: pointer;
+              box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.8);
+              i {
+                color: $secondaryColor;
+              }
+            }
+          }
         }
       }
-      .card-footer {
+    }
+  }
+
+  // =================Good words From People===========================
+  .our-testimonials {
+    .container {
+      .testimonial-slider {
+        .slick-dots li button:before {
+          font-size: 40px;
+        }
+        .card {
+          .testi-single-box {
+            position: relative;
+            border-radius: 2px;
+            box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.07);
+            margin: 0 0px;
+            z-index: 1;
+            transition: 0.9s all;
+            &:after {
+              position: absolute;
+              content: "";
+              height: 100%;
+              width: 100%;
+              background: $secondaryColor;
+              top: 0;
+              left: 0;
+              border-radius: 2px;
+              z-index: -1;
+              transition: 0.5s;
+              transform: scale(0.2, 1);
+              opacity: 0;
+            }
+            &:hover:after {
+              transform: scale(1);
+              opacity: 1;
+            }
+            > i {
+              font-size: 40px;
+              color: rgb(73, 84, 94);
+            }
+            ul {
+              li {
+                color: $secondaryColor;
+              }
+            }
+            &:hover ul li {
+              color: goldenrod;
+            }
+            .name-title {
+              h3 {
+                color: $secondaryColor;
+              }
+            }
+            &:hover .name-title h3 {
+              color: $blackColor;
+            }
+          }
+          .small-box-border {
+            position: absolute;
+            content: "";
+            top: 10px;
+            left: 10px;
+            border-radius: 2px;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: 1px dotted $secondaryColor;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+  // =================Explore our beautiful city highlights photos===========================
+  .city-highlights-photos {
+    position: relative;
+    &::before {
+      background-color: $blackColor;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 515px;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .Portfolio-header {
+      padding-top: 100px;
+      .visit-link {
         a {
-          text-decoration: underline;
+          background-color: $secondaryColor;
+          padding: 20px 40px;
           font-size: 18px;
-          list-style: 34px;
-          font-family: $jost-font;
           font-weight: 500;
-          color: $secondaryColor;
+          line-height: 24px;
+        }
+      }
+    }
+    .card {
+      overflow: hidden;
+      img {
+        transition: transform 2s;
+      }
+      &:hover img {
+        transform: scale(1.1);
+      }
+      .image-title {
+        background-color: $EigengrauColor;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 93%;
+        .button-background-color {
+          width: 14%;
+          height: 100%;
+          position: absolute;
+          right: 0;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          background-color: $secondaryColor;
+          clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+
+          button {
+            outline: none;
+            border: none;
+            padding: 0px 4px;
+            border-radius: 50%;
+            i {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // =================Latest From Our Newsroom=================
+  .Newsroom {
+    // margin-top: 250px;
+    .container {
+      .card {
+        box-shadow: 2px 2px 20px 2px #0000001a;
+        .card-body {
+          .date-comment {
+            color: $QuickSilver;
+            font-family: $jost-font;
+            .date {
+              background-color: $secondaryColor;
+              -webkit-clip-path: polygon(
+                71% 0,
+                100% 19%,
+                70% 21%,
+                69% 100%,
+                0 100%,
+                0 0
+              );
+              clip-path: polygon(
+                69% 0,
+                100% 32%,
+                70% 33%,
+                69% 100%,
+                0 100%,
+                0 0
+              );
+              display: inline-block;
+              padding: 2px 40px 2px 20px;
+              margin-top: -32px;
+              justify-content: start;
+              text-align: start;
+              position: absolute;
+              left: 15px;
+            }
+            i {
+              color: $secondaryColor;
+            }
+          }
+          .card-title {
+            color: $secondaryColor;
+            margin-top: 30px;
+          }
+        }
+        .card-footer {
+          a {
+            text-decoration: underline;
+            font-size: 18px;
+            list-style: 34px;
+            font-family: $jost-font;
+            font-weight: 500;
+            color: $secondaryColor;
+          }
         }
       }
     }
@@ -727,173 +746,15 @@
 /* Responsive: start 320px end: 1368px  */
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
-  .home.banner .images-optimization .cover-images-overlay {
-    justify-content: center;
-    text-align: center;
-  }
-  .home.banner-card {
-    margin-top: 20px;
-  }
-  .about-company .images .img-tow {
-    right: 0px;
-    bottom: -5px;
-  }
-  .about-company .images .img-one {
-    height: auto;
-  }
-  .about-company .company-details {
-    margin-left: 0px;
-    margin-top: 50px;
-    text-align: center;
-  }
-  .about-company .company-details .company-videos {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-  .close {
-    right: -5%;
-    font-size: 30px;
-  }
-  .government-service {
-    padding: 50px 0px;
-  }
-  .government-service .card img {
-    width: 15%;
-  }
-  .home.our-investigators img {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .about article {
-    margin-top: 50px;
-  }
-  .about .best-city-government .images-and-overlay img {
-    min-height: 35vh;
-  }
-  .about .best-city-government .best-ciy-service-information .city-content {
-    margin-top: 25px;
-  }
-  .closeTwo {
-    top: -10%;
-    right: -7%;
-    font-size: 30px;
-  }
-  .about article .footer-content {
-    padding: 0;
-  }
-  section.home.upcaming-city {
-    text-align: center;
-  }
-  .Portfolio-header {
-    flex-direction: column;
-    row-gap: 40px;
-    text-align: center;
-  }
-  .city-highlights-photos .container-fluid .Portfolio-header .visit-link a {
-    padding: 10px 40px;
-    border-radius: 5px;
-  }
-  .Portfolio-header.d-flex.align-items-center.justify-content-between.mb-4 {
-    padding-top: 50px;
-  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  .home.banner .images-optimization .cover-images-overlay {
-    justify-content: center;
-    text-align: center;
-  }
-  .home.banner-card {
-    margin-top: 20px;
-  }
-  .close {
-    right: -5%;
-    font-size: 40px;
-  }
-  .about-company .company-details {
-    margin-left: 0px;
-    margin-top: 50px;
-    text-align: center;
-  }
-  .about-company .images .img-one {
-    height: auto;
-  }
-  .government-service .card img {
-    width: 18%;
-  }
-  .about .best-city-government .best-ciy-service-information .city-content {
-    margin-top: 25px;
-  }
-  .about article {
-    margin-top: 50px;
-  }
-  .about article .footer-content {
-    padding: 0;
-  }
-  section.home.upcaming-city {
-    text-align: center;
-  }
-  .city-highlights-photos .container-fluid .Portfolio-header .visit-link a {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .home.banner .images-optimization .cover-images-overlay {
-    justify-content: center;
-    text-align: center;
-  }
-  .home.banner-card {
-    margin-top: 20px;
-  }
-  .about-company .company-details {
-    margin-left: 0px;
-    margin-top: 50px;
-    text-align: center;
-  }
-  .about-company .company-details .company-videos {
-    justify-content: space-around;
-  }
-  .about-company .images .img-one {
-    height: auto;
-  }
-  .government-service .card img {
-    width: 20%;
-  }
-  .about .best-city-government .best-ciy-service-information .city-content {
-    margin-top: 25px;
-  }
-  .about article {
-    margin-top: 50px;
-  }
-  .about article .footer-content {
-    padding: 0;
-  }
-  .city-highlights-photos .container-fluid .Portfolio-header .visit-link a {
-    padding: 15px 30px;
-    font-size: 17px;
-  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  .about-company .company-details .company-videos {
-    justify-content: space-around;
-  }
-  .about-company .company-details {
-    margin-left: 0px;
-    margin-top: 50px;
-    text-align: center;
-  }
-  .about-company .images .img-one {
-    height: auto;
-  }
-  .about .best-city-government .best-ciy-service-information .city-content {
-    margin-top: 25px;
-  }
-  .about article {
-    margin-top: 50px;
-  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {

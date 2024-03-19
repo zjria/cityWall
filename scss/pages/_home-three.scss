@@ -1,110 +1,110 @@
-// ==============Home three banner section==============
-.home-three.banner-card {
-  font-family: "Raleway", sans-serif;
-  margin-top: 0px;
-  background-color: $bannerBgColor;
-  padding: 100px 0px 50px 0px;
-  .card {
-    padding: 34px 10px;
-    border-radius: 0;
-    border: none;
-    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18);
-    transition: 0.5s;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    margin-top: 0;
-    z-index: 50;
-    .double-img {
-      position: relative;
-      img {
-        width: 100%;
-        padding: 10px;
-        border-radius: 0;
-        transition: 0.5s;
-        margin: 0 auto;
-        border: 1px dotted $SilverColor;
-        background-color: white;
+.home-three {
+  // ==============Home three banner section==============
+  .banner-card {
+    font-family: "Raleway", sans-serif;
+    margin-top: 0px;
+    background-color: $bannerBgColor;
+    padding: 100px 0px 50px 0px;
+    .card {
+      padding: 34px 10px;
+      border-radius: 0;
+      border: none;
+      box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18);
+      transition: 0.5s;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      margin-top: 0;
+      z-index: 50;
+      .double-img {
+        position: relative;
+        img {
+          width: 100%;
+          padding: 10px;
+          border-radius: 0;
+          transition: 0.5s;
+          margin: 0 auto;
+          border: 1px dotted $SilverColor;
+          background-color: white;
+        }
+        .active {
+          background-color: $secondaryColor;
+        }
+        .top-two-img {
+          position: absolute;
+          opacity: 0;
+          left: 0;
+        }
       }
-      .active {
+      &:hover img {
         background-color: $secondaryColor;
       }
-      .top-two-img {
+      &:hover .top-two-img {
+        opacity: 1;
+      }
+      &::before {
+        content: "";
         position: absolute;
-        opacity: 0;
+        width: 40px;
+        height: 40px;
+        background-color: $whiteColor;
+        top: -20px;
+        rotate: 45deg;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        border-bottom: 5px solid $secondaryColor;
+        top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transition: transform 0.9s ease;
       }
     }
-    &:hover img {
-      background-color: $secondaryColor;
-    }
-    &:hover .top-two-img {
-      opacity: 1;
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      background-color: $whiteColor;
-      top: -20px;
-      rotate: 45deg;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      border-bottom: 5px solid $secondaryColor;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      transform: scaleX(0);
-      transition: transform 0.9s ease;
-    }
   }
-}
 
-// ===========home-three giment-city===========
-.home-three.giment-city {
-  .company-details {
-    margin: 0;
-    .company-list {
-      margin-bottom: 25px;
-    }
-    .city-development {
-      position: relative;
-      margin-bottom: 30px;
-      .progress {
-        .progress-bar {
-          width: 75%;
-          animation: progress-width;
-          animation-duration: 5s;
-        }
-        @keyframes progress-width {
-          0% {
-            width: 0%;
-          }
-          100% {
+  // ===========home-three giment-city===========
+  .giment-city {
+    .company-details {
+      margin: 0;
+      .company-list {
+        margin-bottom: 25px;
+      }
+      .city-development {
+        position: relative;
+        margin-bottom: 30px;
+        .progress {
+          .progress-bar {
             width: 75%;
+            animation: progress-width;
+            animation-duration: 5s;
           }
-        }
-        .number {
-          position: absolute;
-          right: 30px;
-          bottom: 20px;
-          z-index: 99;
-          opacity: 99;
-          color: black;
-          font-size: 20px;
+          @keyframes progress-width {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 75%;
+            }
+          }
+          .number {
+            position: absolute;
+            right: 30px;
+            bottom: 20px;
+            z-index: 99;
+            opacity: 99;
+            color: black;
+            font-size: 20px;
+          }
         }
       }
     }
   }
-}
-// =========Best City Government & Municipal Service Based On USA=========
-.home-three {
+  // =========Best City Government & Municipal Service Based On USA=========
   .download-city {
     background-color: rebeccapurple;
     .card {
@@ -160,205 +160,203 @@
       }
     }
   }
-}
 
-.home-three.services-programs-initiatives {
-  .section-title {
-    margin-bottom: 150px;
-  }
-  .initiatives-all-card {
-    margin-bottom: 50px;
-  }
-  .card {
-    position: relative;
-    .card-body {
-      background-color: $whiteColor;
-      transition: all 0.5s ease;
-      margin: 0px 20px;
-      position: absolute;
-      top: -90px;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      .body-img {
-        display: flex;
-        justify-content: end;
-        .top-images {
-          background-color: $whiteColor;
-          border-radius: 50%;
-          box-shadow: 3px 1px 5px 0px;
-          padding: 15px;
-          justify-content: center;
+  .services-programs-initiatives {
+    .section-title {
+      margin-bottom: 150px;
+    }
+    .initiatives-all-card {
+      margin-bottom: 50px;
+    }
+    .card {
+      position: relative;
+      .card-body {
+        background-color: $whiteColor;
+        transition: all 0.5s ease;
+        margin: 0px 20px;
+        position: absolute;
+        top: -90px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        .body-img {
           display: flex;
-          align-items: center;
-          img {
+          justify-content: end;
+          .top-images {
+            background-color: $whiteColor;
+            border-radius: 50%;
+            box-shadow: 3px 1px 5px 0px;
+            padding: 15px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            img {
+            }
+          }
+        }
+        .card-footer {
+          a {
+            color: $secondaryColor;
+            text-decoration: underline;
           }
         }
       }
-      .card-footer {
-        a {
-          color: $secondaryColor;
-          text-decoration: underline;
-        }
-      }
-    }
-    &:hover .card-body {
-      background-color: $secondaryColor;
-      color: $whiteColor;
-      .card-text {
+      &:hover .card-body {
+        background-color: $secondaryColor;
         color: $whiteColor;
-      }
-      .card-footer {
-        a {
+        .card-text {
           color: $whiteColor;
         }
-      }
-    }
-  }
-  p {
-    font-family: $josefin-font;
-    a {
-      color: $secondaryColor;
-      text-decoration: underline;
-    }
-  }
-}
-// ==========Our Department==========
-.department {
-  position: relative;
-  .container-fluid {
-    padding: 0px;
-  }
-  .bg-images {
-    img {
-      width: 55%;
-    }
-  }
-  .department-content {
-    background-color: $secondaryColor;
-    padding: 40px;
-    position: absolute;
-    bottom: 0;
-    margin-left: 220px;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background-color: #b59a6d;
-      top: -55px;
-      left: 420px;
-      z-index: -1;
-    }
-
-    .div-title {
-      .semi-title {
-        color: $whiteColor;
-      }
-      .section-title {
-        h1,
-        p {
-          color: $whiteColor;
-        }
-        h1 {
-          font-size: 40px;
-        }
-      }
-      .cityWall-btn-two {
-        a {
-          background: $buttonBgColor;
+        .card-footer {
+          a {
+            color: $whiteColor;
+          }
         }
       }
     }
-    ul {
-      row-gap: 20px;
-      display: flex;
-      flex-direction: column;
-      li {
-        a,
-        span,
-        i {
-          color: $whiteColor;
-          transition: all 0.5s ease;
-        }
-        .divide-row {
-          background-color: $whiteColor;
-          transition: all 0.5s ease;
-        }
-        &:hover .divide-row {
-          background-color: $primaryColor;
-        }
-        &:hover i {
-          color: $primaryColor;
-        }
+    p {
+      font-family: $josefin-font;
+      a {
+        color: $secondaryColor;
+        text-decoration: underline;
       }
     }
   }
-}
-
-// ================Beautiful Portfolio=================
-.beautiful-Portfolio {
-  .beautiful-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    .second-column,
-    .three-column {
-      display: flex;
-      flex-direction: column;
-      row-gap: 30px;
+  // ==========Our Department==========
+  .department {
+    position: relative;
+    .container-fluid {
+      padding: 0px;
     }
-    .item {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transition: all 0.5s ease;
+    .bg-images {
       img {
+        width: 55%;
+      }
+    }
+    .department-content {
+      background-color: $secondaryColor;
+      padding: 40px;
+      position: absolute;
+      bottom: 0;
+      margin-left: 220px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #b59a6d;
+        top: -55px;
+        left: 420px;
+        z-index: -1;
+      }
+
+      .div-title {
+        .semi-title {
+          color: $whiteColor;
+        }
+        .section-title {
+          h1,
+          p {
+            color: $whiteColor;
+          }
+          h1 {
+            font-size: 40px;
+          }
+        }
+        .cityWall-btn-two {
+          a {
+            background: $buttonBgColor;
+          }
+        }
+      }
+      ul {
+        row-gap: 20px;
+        display: flex;
+        flex-direction: column;
+        li {
+          a,
+          span,
+          i {
+            color: $whiteColor;
+            transition: all 0.5s ease;
+          }
+          .divide-row {
+            background-color: $whiteColor;
+            transition: all 0.5s ease;
+          }
+          &:hover .divide-row {
+            background-color: $primaryColor;
+          }
+          &:hover i {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+
+  // ================Beautiful Portfolio=================
+  .beautiful-Portfolio {
+    .beautiful-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      .second-column,
+      .three-column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+      }
+      .item {
+        position: relative;
         width: 100%;
         height: 100%;
-        transition: all 0.8s ease;
-        // overflow: hidden;
-      }
-      &:hover img {
-        scale: 1.1;
-      }
-      .added-icons {
-        i {
-          display: none;
-          transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        img {
+          width: 100%;
+          height: 100%;
+          transition: all 0.8s ease;
+          // overflow: hidden;
         }
-      }
-      &:hover {
-        i {
-          background-color: rgb(227 209 188 / 44%);
-          width: 90%;
-          height: 90%;
-          font-size: 30px;
-          font-weight: bolder;
-          color: #fff;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
+        &:hover img {
+          scale: 1.1;
+        }
+        .added-icons {
+          i {
+            display: none;
+            transition: all 0.5s ease;
+          }
+        }
+        &:hover {
+          i {
+            background-color: rgb(227 209 188 / 44%);
+            width: 90%;
+            height: 90%;
+            font-size: 30px;
+            font-weight: bolder;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
         }
       }
     }
   }
-}
-// ============Upcoming City Activities & Events Schedule============
-.home-three.upcaming-city {
-  .upcaming-evevnts-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+  // ============Upcoming City Activities & Events Schedule============
+  .upcaming-city {
+    .upcaming-evevnts-card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
   }
-}
-// =================Latest From Our Newsroom=================
+  // =================Latest From Our Newsroom=================
 
-.home-three {
   .home-three-date {
     background-color: $whiteColor;
     margin-top: -32px;
@@ -384,21 +382,21 @@
     color: $primaryColor;
     margin: 10px 0px;
   }
-}
 
-// ==============Google map section==============
+  // ==============Google map section==============
 
-#map {
-  height: 100%;
+  #map {
+    height: 100%;
+  }
 }
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
-  .home-three.giment-city .company-details .city-development h3 {
+  .home-three .giment-city .company-details .city-development h3 {
     margin-bottom: 40px;
   }
-  .home-three.services-programs-initiatives .card {
+  .home-three .services-programs-initiatives .card {
     margin-bottom: 100px;
   }
   .department .department-content {
@@ -428,10 +426,10 @@
   .department .department-content .div-title .section-title h1 {
     font-size: 20px;
   }
-  .home-three.upcaming-city .upcaming-evevnts-card {
+  .home-three .upcaming-city .upcaming-evevnts-card {
     grid-template-columns: 1fr;
   }
-  .home-three.services-programs-initiatives .initiatives-all-card {
+  .home-three .services-programs-initiatives .initiatives-all-card {
     margin-bottom: -50px;
   }
   .department .department-content::before {
@@ -440,10 +438,10 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  .home-three.giment-city .company-details .city-development h3 {
+  .home-three .giment-city .company-details .city-development h3 {
     margin-bottom: 30px;
   }
-  .home-three.services-programs-initiatives .card {
+  .home-three .services-programs-initiatives .card {
     margin-bottom: 100px;
     align-items: center;
   }
@@ -466,13 +464,13 @@
   .department .department-content .div-title .section-title h1 {
     font-size: 25px;
   }
-  .home-three.services-programs-initiatives .initiatives-all-card {
+  .home-three .services-programs-initiatives .initiatives-all-card {
     margin-bottom: -50px;
   }
   .department .department-content::before {
     display: none;
   }
-  .home-three.upcaming-city .upcaming-evevnts-card {
+  .home-three .upcaming-city .upcaming-evevnts-card {
     grid-template-columns: 1fr;
   }
 }
@@ -481,7 +479,7 @@
   .home-three .download-city .card h3 {
     line-height: 35px;
   }
-  .home-three.services-programs-initiatives .card .card-body {
+  .home-three .services-programs-initiatives .card .card-body {
     margin: 0px 0px;
     position: static;
   }
@@ -501,13 +499,13 @@
   .department .department-content .div-title .section-title h1 {
     font-size: 30px;
   }
-  .home-three.services-programs-initiatives .section-title {
+  .home-three .services-programs-initiatives .section-title {
     margin-bottom: 60px;
   }
   .department .department-content::before {
     display: none;
   }
-  .home-three.upcaming-city .upcaming-evevnts-card {
+  .home-three .upcaming-city .upcaming-evevnts-card {
     grid-template-columns: 1fr;
   }
 }
@@ -523,7 +521,7 @@
   .department .department-content::before {
     display: none;
   }
-  .home-three.upcaming-city .upcaming-evevnts-card {
+  .home-three .upcaming-city .upcaming-evevnts-card {
     grid-template-columns: 1fr;
   }
 }

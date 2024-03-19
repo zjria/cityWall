@@ -220,6 +220,19 @@ form button:hover {
     height: auto;
     position: static;
   }
+  .about .navbar-details .container .brand-logo {
+    padding: 10px;
+    height: auto;
+    position: static;
+  }
+  .about .navbar-details .container .brand-logo a {
+    padding: 0;
+    float: left;
+    padding-right: 0px;
+  }
+  .about .navbar-details .container .brand-logo a img {
+    width: 90px;
+  }
   .navbar-details .container .nav-item .nav-link .dash-icons {
     display: block;
   }
