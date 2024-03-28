@@ -1,39 +1,54 @@
-.navbar-details {
-  font-size: 16px;
-  background-color: $whiteColor;
-  font-family: $roboto-font;
-  font-weight: bold;
-  padding: 9.8px 0px;
+.home-one {
+  .navbar-details {
+    background-color: $whiteColor;
+    font-family: $roboto-font;
+    font-weight: bold;
+    padding: 0px;
+    height: 100px;
 
-  .container {
     .brand-logo {
       background-color: $secondaryColor;
       position: absolute;
-      top: -77px;
+      top: -60px;
       left: 0;
-      padding-right: 80px;
-      height: 164px;
-
+      width: 300px;
+      height: 160px;
       a {
         display: flex;
-        padding: 57px 20px;
-        float: right;
-        padding-right: 100px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
 
         img {
-          width: 130px;
+          width: 50%;
+          margin-left: -60px;
         }
       }
+      &::before {
+        background-color: $whiteColor;
+        content: "";
+        position: absolute;
+        height: 100px;
+        width: 60px;
+        bottom: 0;
+        right: 0;
+      }
     }
-
+    .navigation-link {
+      padding-left: 230px;
+    }
     .nav-item {
       .nav-link {
         color: $blackColor;
         padding: 0px;
-
         span,
         i {
           border-bottom: 1px solid transparent;
+          transition: all 1s ease;
+        }
+        i {
+          padding-left: 5px;
         }
 
         &:hover span {
@@ -204,21 +219,26 @@ form button:hover {
 /* Responsive: start 320px end: 1368px  */
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
-  .navbar-details .container {
-    padding-left: 12px;
+  .home-one .navbar-details {
+    padding: 20px 0px;
+    height: auto;
   }
-  .navbar-details .container .brand-logo a {
-    padding: 0;
-    float: left;
-    padding-right: 0px;
+  .home-one .navbar-details .brand-logo::before {
+    display: none;
   }
-  .navbar-details .container .brand-logo a img {
-    width: 90px;
-  }
-  .navbar-details .container .brand-logo {
-    padding: 10px;
+  .home-one .navbar-details .container .brand-logo {
+    padding: 5px 10px;
     height: auto;
     position: static;
+    width: 120px;
+    border-radius: 2px;
+  }
+  .home-one .navbar-details .brand-logo a {
+    margin: 0;
+  }
+  .home-one .navbar-details .brand-logo a img {
+    width: 100%;
+    margin-left: 0px;
   }
   .about .navbar-details .container .brand-logo {
     padding: 10px;
@@ -242,6 +262,9 @@ form button:hover {
   .home-four .navbar-details .search-button {
     flex-direction: column;
   }
+  .home-one .navbar-details .navigation-link {
+    padding-left: 0px;
+  }
   div#navbarSupportedContent {
     margin-top: 20px;
   }
@@ -261,10 +284,19 @@ form button:hover {
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  .navbar-details .container .brand-logo {
-    position: static;
+  .home-one .navbar-details {
+    padding: 20px 0px;
     height: auto;
-    padding: 10px;
+  }
+  .home-one .navbar-details .brand-logo::before {
+    display: none;
+  }
+  .home-one .navbar-details .container .brand-logo {
+    padding: 5px 10px;
+    height: auto;
+    position: static;
+    width: 120px;
+    border-radius: 2px;
   }
   .navbar-details .container .brand-logo a {
     display: flex;
@@ -272,11 +304,9 @@ form button:hover {
     float: left;
     padding-right: 0px;
   }
-  .navbar-details .container .brand-logo a img {
-    width: 90px;
-  }
-  .navbar-details .container {
-    padding-left: 0px;
+  .home-one .navbar-details .brand-logo a img {
+    width: 100%;
+    margin-left: 0px;
   }
   div#navbarSupportedContent {
     margin-top: 20px;
@@ -284,6 +314,9 @@ form button:hover {
   .navbar-details .cityWall-btn a {
     margin: 0 auto;
     padding: 10px 40px;
+  }
+  .home-one .navbar-details .navigation-link {
+    padding-left: 0px;
   }
   .icons {
     display: none;
@@ -300,22 +333,47 @@ form button:hover {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .navbar-details .container .brand-logo {
-    position: static;
+  .home-one .navbar-details {
+    padding: 20px 0px;
     height: auto;
-    padding: 10px;
   }
+  .home-one .navbar-details .brand-logo::before {
+    display: none;
+  }
+  .home-one .navbar-details .container .brand-logo {
+    padding: 5px 10px;
+    height: auto;
+    position: static;
+    width: 140px;
+    border-radius: 2px;
+  }
+  .navbar-details .container .brand-logo a {
+    display: flex;
+    padding: 0px;
+    float: left;
+    padding-right: 0px;
+  }
+  .home-one .navbar-details .brand-logo a img {
+    width: 100%;
+    margin-left: 0px;
+  }
+  div#navbarSupportedContent {
+    margin-top: 20px;
+  }
+  .navbar-details .cityWall-btn a {
+    margin: 0 auto;
+    padding: 10px 40px;
+  }
+  .home-one .navbar-details .navigation-link {
+    padding-left: 0px;
+  }
+
   .navbar-details .container .brand-logo a {
     padding: 0;
     float: left;
     padding-right: 0;
   }
-  .navbar-details .container {
-    padding-left: 0;
-  }
-  .navbar-details .container .brand-logo a img {
-    width: 120px;
-  }
+
   div#navbarSupportedContent {
     margin-top: 20px;
   }
@@ -341,27 +399,31 @@ form button:hover {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  .navbar-details .container {
-    padding-left: 0;
-  }
-  .navbar-details .container .brand-logo {
-    position: static;
-    left: 0;
-    padding-right: 0;
+  .home-one .navbar-details .container .brand-logo {
+    padding: 5px 10px;
     height: auto;
-    padding: 20px;
+    position: static;
+    width: 140px;
+    border-radius: 2px;
   }
-  .navbar-details .container .brand-logo a {
-    padding: 0;
-    float: left;
-    padding-right: 0;
+  .home-one .navbar-details .brand-logo::before {
+    display: none;
+  }
+  .home-one .navbar-details .brand-logo a {
+    margin: 0;
+  }
+  .home-one .navbar-details .brand-logo a img {
+    width: 100%;
+    margin-left: 0px;
   }
   .icons {
     display: none;
   }
-  div#navbarSupportedContent {
-    justify-content: space-between;
-    margin-left: 15px;
+  .home-one .navbar-details ul {
+    margin-left: auto;
+  }
+  .home-one .navbar-details .navigation-link {
+    padding-left: 0px;
   }
   .home-three .navbar-details .container .brand-logo {
     position: static;
@@ -375,7 +437,4 @@ form button:hover {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-  div#navbarSupportedContent {
-    justify-content: end;
-  }
 }

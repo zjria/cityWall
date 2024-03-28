@@ -1,78 +1,101 @@
 header {
-  position: relative;
+  .home-one {
+    position: relative;
 
-  .top-header {
-    font-family: $jost-font;
+    .top-header {
+      font-family: $jost-font;
 
-    .top-header-content {
-      background-color: $blackColor;
-      color: $whiteColor;
-      padding: 18px 0px;
-      width: 100%;
+      .top-header-content {
+        background-color: $primaryColor;
+        height: 60px;
+        align-items: center;
+        display: flex;
 
-      .contact-top-information {
-        padding-left: 255px;
-
-        a {
-          color: $whiteColor;
-        }
-
-        .mobile-number-email {
-          column-gap: 80px;
+        .contact-top-information {
+          padding-left: 230px;
 
           a {
-            .phone {
-              background: $whiteColor;
-              color: $blackColor;
-              padding: 1px 3px;
-              border-radius: 4px;
-              transition: 2s;
-            }
-            &:hover .phone {
-              background-color: $secondaryColor;
-              color: $whiteColor;
-            }
+            color: $whiteColor;
           }
-          a {
-            .email {
-              background: $whiteColor;
-              color: $blackColor;
-              padding: 1px 3px;
-              border-radius: 2px;
-              transition: 2s;
+
+          .mobile-number-email {
+            column-gap: 80px;
+
+            a {
+              .phone {
+                background: $whiteColor;
+                color: $blackColor;
+                padding: 4px 8px;
+                border-radius: 50%;
+                transition: 2s;
+              }
+              &:hover .phone {
+                background-color: $secondaryColor;
+                color: $whiteColor;
+              }
             }
-            &:hover .email {
-              background-color: $secondaryColor;
-              color: $whiteColor;
-            }
-          }
-        }
-
-        .language-socialLink {
-          .language {
-            margin-right: 50px;
-
-            select#language {
-              color: $whiteColor;
-              border: none;
-              background: rgba(0, 0, 0, 0);
-              outline: none;
-              cursor: pointer;
-
-              option {
-                background-color: $blackColor;
+            a {
+              .email {
+                background: $whiteColor;
+                color: $blackColor;
+                padding: 4px 8px;
+                border-radius: 50%;
+                transition: 2s;
+              }
+              &:hover .email {
+                background-color: $secondaryColor;
+                color: $whiteColor;
               }
             }
           }
 
-          .socialLink {
-            ul {
-              margin-left: 15px;
-              column-gap: 15px;
-              li:nth-child(even) {
-                width: 20px;
-                background: $secondaryColor;
-                text-align: center;
+          .language-socialLink {
+            .language {
+              margin-right: 50px;
+
+              select#language {
+                color: $whiteColor;
+                border: none;
+                background: rgba(0, 0, 0, 0);
+                outline: none;
+                cursor: pointer;
+
+                option {
+                  background-color: $blackColor;
+                }
+              }
+            }
+
+            .socialLink {
+              ul {
+                margin-left: 15px;
+                column-gap: 15px;
+                li:nth-child(odd) {
+                  width: 20px;
+                  background: $secondaryColor;
+                  text-align: center;
+                  border-radius: 2px;
+                  a {
+                    transition: all 1s ease;
+                    color: $whiteColor;
+                  }
+                  &:hover a {
+                    color: $primaryColor;
+                  }
+                }
+                li:nth-child(even) {
+                  width: 20px;
+                  background: $whiteColor;
+                  text-align: center;
+                  border-radius: 1px;
+                  a {
+                    transition: all 1s ease;
+                    color: $primaryColor;
+                  }
+                  &:hover a {
+                    color: $secondaryColor;
+                  }
+                }
               }
             }
           }
@@ -83,11 +106,13 @@ header {
 }
 
 // =============Home three header=============
-header .top-header .top-header-content {
-  background-color: $secondaryColor;
-  color: #fff;
-  padding: 18px 0px;
-  width: 100%;
+header {
+  .top-header {
+    .top-header-content {
+      background-color: $secondaryColor;
+      color: $whiteColor;
+    }
+  }
 }
 .address {
   address {
@@ -237,12 +262,26 @@ header .top-header .top-header-content {
 /* Responsive: start 320px end: 1368px  */
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
-  header .top-header .top-header-content .contact-top-information {
+  header .home-one .top-header .top-header-content {
+    height: fit-content;
+    padding: 20px 0px;
+  }
+  header
+    .home-one
+    .top-header
+    .top-header-content
+    .contact-top-information
+    .language-socialLink
+    .language {
+    margin-right: 0;
+  }
+  header .home-one .top-header .top-header-content .contact-top-information {
     padding-left: 0px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
+
   header
     .top-header
     .top-header-content
@@ -258,14 +297,7 @@ header .top-header .top-header-content {
     align-items: center;
     justify-content: space-between;
   }
-  header
-    .top-header
-    .top-header-content
-    .contact-top-information
-    .language-socialLink
-    .language {
-    margin-right: 0px;
-  }
+
   .home-three .top-header .top-header-content .contact-top-information {
     padding-left: 0;
     padding: 20px 0px;
@@ -285,11 +317,25 @@ header .top-header .top-header-content {
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  header .top-header .top-header-content .contact-top-information {
-    padding-left: 0px;
+  header .home-one .top-header .top-header-content {
+    height: fit-content;
+    padding: 20px 0px;
+  }
+  header
+    .home-one
+    .top-header
+    .top-header-content
+    .contact-top-information
+    .language-socialLink
+    .language {
+    margin-right: 0;
+  }
+  header .home-one .top-header .top-header-content .contact-top-information {
+    padding-left: 0;
     flex-direction: column;
     row-gap: 20px;
   }
+
   header
     .top-header
     .top-header-content
@@ -298,14 +344,6 @@ header .top-header .top-header-content {
     -moz-column-gap: 0px;
     column-gap: 0px;
     justify-content: space-evenly;
-  }
-  header
-    .top-header
-    .top-header-content
-    .contact-top-information
-    .language-socialLink
-    .language {
-    margin-right: 0;
   }
   .language-socialLink {
     justify-content: space-evenly;
@@ -346,6 +384,10 @@ header .top-header .top-header-content {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  header .home-one .top-header .top-header-content {
+    height: fit-content;
+    padding: 20px 0px;
+  }
   header .top-header .top-header-content .contact-top-information {
     padding-left: 0;
     flex-direction: column;
@@ -371,18 +413,19 @@ header .top-header .top-header-content {
     .language {
     margin-right: 0px;
   }
-  .home-three .top-header .top-header-content .contact-top-information {
-    padding-left: 0%;
-    padding: 10px 0px;
-  }
-  .about .top-header .top-header-content .contact-top-information {
-    padding-left: 0%;
-    padding: 10px 0px;
+  header .home-one .top-header .top-header-content .contact-top-information {
+    padding-left: 0;
+    flex-direction: column;
+    row-gap: 20px;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  header .top-header .top-header-content .contact-top-information {
+  header .home-one .top-header .top-header-content {
+    height: fit-content;
+    padding: 20px 0px;
+  }
+  header .home-one .top-header .top-header-content .contact-top-information {
     padding-left: 0;
   }
 
